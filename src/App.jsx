@@ -106,7 +106,7 @@ const App = () => {
         </nav>
       </header>
 
-      <section id="englishdream" className="h-screen flex flex-col justify-center items-center text-white text-center px-6 bg-cover bg-center relative bg-gradient-to-b from-[#0C1C8C] to-transparent" style={{ backgroundImage: "url('https://i.ibb.co/wZgdMfJZ/ff.jpg')" }}>
+      <section id="englishdream" className="h-screen flex flex-col justify-center items-center text-white text-center px-6 bg-cover bg-center relative bg-gradient-to-b from-[#0C1C8C] to-transparent" style={{ backgroundImage: "url('https://i.ibb.co/SwnGJkL4/british-flag.jpg')" }}>
         <div className="absolute inset-0 backdrop-brightness-75"></div>
         <div className="relative z-10 flex flex-col items-center">
         <h1 className={`text-5xl font-extrabold transition-all duration-1000 ease-in-out transform ${fade ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>{headline}</h1>
