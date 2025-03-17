@@ -115,24 +115,24 @@ const App = () => {
       </div>
       </section>
 
-      <section id="onas" className="h-screen flex flex-row justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-12 flex-row-reverse animate-shimmer">
-        <img src="https://i.ibb.co/Y74z0Jz8/20250310-152632.jpg" alt="O nas" className="w-1/3 max-w-xl rounded-2xl shadow-2xl mr-8 transition-all duration-300 hover:scale-105" />
-        
-        <div className="w-1/2 text-left">
-          <h2 className="text-4xl font-bold text-gray-800">O nas</h2>
-          <p className="text-lg mt-4 max-w-xl">
-            Cześć! Nazywam się Ewa i jestem lektorką języka angielskiego. Od dwóch lat pomagam moim uczniom przełamywać bariery językowe, rozwijać płynność i nabierać pewności siebie w mówieniu.
-          </p>
-          <p className="text-lg mt-4 max-w-xl">
-            Choć od czterech lat mieszkam w Polsce, całe swoje życie spędziłam w Wielkiej Brytanii – to tam dorastałam, studiowałam i zdobywałam pierwsze doświadczenia zawodowe. Z wykształcenia jestem architektem, ale to właśnie nauczanie języka angielskiego stało się moją prawdziwą pasją i powołaniem.
-          </p>
-          <p className="text-lg mt-4 max-w-xl">
-            W swojej pracy kładę duży nacisk na praktyczną komunikację i naturalne użycie języka. Wiem, jak ważne jest, aby nauka była nie tylko skuteczna, ale także przyjemna, dlatego staram się dostosować zajęcia do indywidualnych potrzeb moich uczniów.
-          </p>
-          <p className="text-lg mt-4 max-w-xl font-semibold">
-            Zapraszam do wspólnej nauki! 😊
-          </p>
-        </div>
+      <section id="onas" className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 md:px-12 py-12 md:py-24 animate-shimmer text-center md:text-left">
+    	<img src="https://i.ibb.co/Y74z0Jz8/20250310-152632.jpg" alt="O mnie" className="w-2/3 md:w-1/3 max-w-xl rounded-2xl shadow-2xl mb-6 md:mb-0 md:mr-8 transition-all duration-300 hover:scale-105" />
+
+    	<div className="w-full md:w-1/2">
+    	  <h2 className="text-4xl font-bold text-gray-800">O mnie</h2>
+    	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
+    		Cześć! Nazywam się Ewa i jestem lektorką języka angielskiego. Od dwóch lat pomagam moim uczniom przełamywać bariery językowe, rozwijać płynność i nabierać pewności siebie w mówieniu.
+    	  </p>
+    	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
+    		Choć od czterech lat mieszkam w Polsce, całe swoje życie spędziłam w Wielkiej Brytanii – to tam dorastałam, studiowałam i zdobywałam pierwsze doświadczenia zawodowe. Z wykształcenia jestem architektem, ale to właśnie nauczanie języka angielskiego stało się moją prawdziwą pasją i powołaniem.
+    	  </p>
+    	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
+    		W swojej pracy kładę duży nacisk na praktyczną komunikację i naturalne użycie języka. Wiem, jak ważne jest, aby nauka była nie tylko skuteczna, ale także przyjemna, dlatego staram się dostosować zajęcia do indywidualnych potrzeb moich uczniów.
+    	  </p>
+    	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0 font-semibold">
+    		Zapraszam do wspólnej nauki! 😊
+    	  </p>
+    	</div>
       </section>
 
       <section id="oferta" className="min-h-[180vh] flex flex-col justify-center items-center bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white text-center px-6 py-12">
@@ -188,9 +188,6 @@ const App = () => {
           </div>
           <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Chcę uczyć się już od zaraz!</a>
         </div>
-        
-         
-
       </section>
 
       <section id="współpraca" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 via-indigo-500 to-[#0C1C8C] text-white text-center px-6 py-12">
