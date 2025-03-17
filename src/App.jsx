@@ -52,18 +52,51 @@ const App = () => {
     }
   };
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = (e, id) => {
+    scrollToSection(e, `#${id}`);
+    setIsOpen(false);
+  };
+
   return (
     <div className="font-sans text-gray-900">
-      <header className="fixed top-0 w-full bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD] animate-shimmer shadow-xl backdrop-blur-md p-4 z-50 transition-all duration-300 rounded-b-3xl">
-        <nav className="flex justify-center space-x-8 text-lg font-semibold text-white">
-          {['English Dream', 'O nas', 'Oferta', 'Współpraca', 'Opinie', 'Cennik', 'Kontakt'].map((text, index) => {
+     <header className="fixed top-0 w-full bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD] animate-shimmer shadow-xl backdrop-blur-md p-4 z-50 transition-all duration-300 rounded-b-3xl">
+        <div className="flex justify-between items-center px-4">
+          {/* Hamburger Icon */}
+          <button
+            className="md:hidden text-white focus:outline-none"
+            onClick={toggleMenu}
+          >
+            {isOpen ? "✖" : "☰"}
+          </button>
+        </div>
+
+        <nav
+          className={`md:flex md:justify-center md:space-x-8 text-lg font-semibold text-white ${
+            isOpen ? "block" : "hidden"
+          } md:block absolute md:relative top-full left-0 w-full md:w-auto bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD] md:bg-transparent p-4 md:p-0 rounded-b-3xl`}
+        >
+          {[
+            "English Dream",
+            "O nas",
+            "Oferta",
+            "Współpraca",
+            "Opinie",
+            "Cennik",
+            "Kontakt",
+          ].map((text, index) => {
             const id = text.toLowerCase().replace(/ /g, "");
             return (
               <a
                 key={index}
                 href={`#${id}`}
-                onClick={(e) => scrollToSection(e, `#${id}`)}
-                className="relative transition duration-300 group"
+                onClick={(e) => closeMenu(e, id)}
+                className="block md:inline relative transition duration-300 group py-2 md:py-0"
               >
                 {text}
                 <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
