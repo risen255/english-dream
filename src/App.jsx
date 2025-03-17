@@ -65,7 +65,7 @@ const App = () => {
 
   return (
     <div className="font-sans text-gray-900">
-     <header className="fixed top-0 w-full bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD] animate-shimmer shadow-xl backdrop-blur-md p-4 z-50 transition-all duration-300 rounded-b-3xl">
+     <header className="fixed top-0 w-full bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD] animate-shimmer shadow-xl backdrop-blur-md p-4 z-50 transition-all duration-300 ">
         <div className="flex justify-between items-center px-4">
           {/* Hamburger Icon */}
           <button
@@ -79,7 +79,7 @@ const App = () => {
         <nav
           className={`md:flex md:justify-center md:space-x-8 text-lg font-semibold text-white ${
             isOpen ? "block" : "hidden"
-          } md:block absolute md:relative top-full left-0 w-full md:w-auto bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD] md:bg-transparent p-4 md:p-0 rounded-b-3xl`}
+          } md:block absolute md:relative top-full left-0 w-full md:w-auto bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD] md:bg-transparent p-4 md:p-0 `}
         >
           {[
             "English Dream",
