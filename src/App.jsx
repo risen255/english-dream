@@ -132,7 +132,7 @@ const App = () => {
            </nav>
          </header>
 
-      <section id="englishdream" className="h-screen flex flex-col justify-center items-center text-white text-center px-6 bg-cover bg-center relative bg-gradient-to-b from-[#0C1C8C] to-transparent" style={{ backgroundImage: "url('https://i.ibb.co/Q31nQW88/transparent3.jpg')" }}>
+      <section id="englishdream" className="h-screen flex flex-col justify-center items-center text-white text-center px-6 bg-cover bg-center relative bg-gradient-to-b from-[#0C1C8C] to-transparent" style={{ backgroundImage: "url('/images/background.jpg')" }}>
         <div className="absolute inset-0 backdrop-brightness-75"></div>
         <div className="relative z-10 flex flex-col items-center">
         <h1 className={`text-5xl font-extrabold transition-all duration-1000 ease-in-out transform ${fade ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>{headline}</h1>
@@ -142,7 +142,7 @@ const App = () => {
       </section>
 
       <section id="onas" className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 md:px-12 py-12 md:py-24 animate-shimmer text-center md:text-left">
-    	<img src="https://i.ibb.co/Y74z0Jz8/20250310-152632.jpg" alt="O mnie" className="w-2/3 md:w-1/3 max-w-xl rounded-2xl shadow-2xl mb-6 md:mb-0 md:mr-8 transition-all duration-300 hover:scale-105" />
+    	<img src="/images/me.jpg" alt="O mnie" className="w-2/3 md:w-1/3 max-w-xl rounded-2xl shadow-2xl mb-6 md:mb-0 md:mr-8 transition-all duration-300 hover:scale-105" />
 
     	<div className="w-full md:w-1/2">
     	  <h2 className="text-4xl font-bold text-gray-800">O mnie</h2>
