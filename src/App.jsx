@@ -98,7 +98,7 @@ const App = () => {
            >
              {/* Logo */}
              <img
-               src="https://i.ibb.co/7xnw4F73/logo.png"
+               src="/images/logo.png"
                alt="Logo"
                className="absolute left-4 top-1/2 transform -translate-y-1/2 h-22 w-auto z-50 cursor-pointer"
                onClick={(e) => scrollToSection(e, "#englishdream")}
