@@ -93,44 +93,44 @@ const App = () => {
   return (
     <div className="font-sans text-gray-900">
      <header
-           className="fixed top-0 w-full p-4 z-50 shadow-xl backdrop-blur-md transition-all duration-[700ms]"
-           style={{ backgroundColor: `rgba(12, 28, 140, ${bgOpacity})` }}
-         >
-           <div className="flex justify-end items-center px-4">
-             <button className="md:hidden text-white focus:outline-none" onClick={toggleMenu}>
-               {isOpen ? "✖" : "☰"}
-             </button>
-           </div>
-
-           <nav
-             className={`md:flex md:justify-center md:space-x-8 text-lg font-semibold text-white ${
-               isOpen ? "block bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD]" : "hidden"
-             } md:block absolute md:relative top-full left-0 w-full md:w-auto p-4 md:p-0`}
+             className="fixed top-0 w-full p-4 z-50 shadow-xl backdrop-blur-md transition-all duration-[700ms]"
+             style={{ backgroundColor: `rgba(12, 28, 140, ${bgOpacity})` }}
            >
-             {[
-               "English Dream",
-               "O nas",
-               "Oferta",
-               "Współpraca",
-               "Opinie",
-               "Cennik",
-               "Kontakt",
-             ].map((text, index) => {
-               const id = text.toLowerCase().replace(/ /g, "");
-               return (
-                 <a
-                   key={index}
-                   href={`#${id}`}
-                   onClick={(e) => closeMenu(e, id)}
-                   className="block md:inline relative transition duration-300 group py-2 md:py-0"
-                 >
-                   {text}
-                   <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
-                 </a>
-               );
-             })}
-           </nav>
-         </header>
+             {/* Logo */}
+             <img
+               src="https://i.ibb.co/7xnw4F73/logo.png"
+               alt="Logo"
+               className="absolute left-4 top-1/2 transform -translate-y-1/2 h-22 w-auto z-50 cursor-pointer"
+               onClick={(e) => scrollToSection(e, "#englishdream")}
+             />
+
+             <div className="flex justify-end items-center px-4">
+               <button className="md:hidden text-white focus:outline-none" onClick={toggleMenu}>
+                 {isOpen ? "✖" : "☰"}
+               </button>
+             </div>
+
+             <nav
+               className={`md:flex md:justify-center md:space-x-8 text-lg font-semibold text-white ${
+                 isOpen ? "block bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD]" : "hidden"
+               } md:block absolute md:relative top-full left-0 w-full md:w-auto p-4 md:p-0`}
+             >
+               {["English Dream", "O nas", "Oferta", "Współpraca", "Opinie", "Cennik", "Kontakt"].map((text, index) => {
+                 const id = text.toLowerCase().replace(/ /g, "");
+                 return (
+                   <a
+                     key={index}
+                     href={`#${id}`}
+                     onClick={(e) => closeMenu(e, id)}
+                     className="block md:inline relative transition duration-300 group py-2 md:py-0"
+                   >
+                     {text}
+                     <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
+                   </a>
+                 );
+               })}
+             </nav>
+           </header>
 
       <section id="englishdream" className="h-screen flex flex-col justify-center items-center text-white text-center px-6 bg-cover bg-center relative bg-gradient-to-b from-[#0C1C8C] to-transparent" style={{ backgroundImage: "url('/images/background.jpg')" }}>
         <div className="absolute inset-0 backdrop-brightness-75"></div>
