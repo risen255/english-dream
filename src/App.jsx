@@ -81,9 +81,11 @@ const App = () => {
     const closeMenu = (e, id) => {
       e.preventDefault();
       const section = document.querySelector(`#${id}`);
-      if (section) {
+      const header = document.querySelector("header"); // Pobranie nagłówka
+      if (section && header) {
+        const headerHeight = header.offsetHeight; // Pobranie wysokości nagłówka
         window.scrollTo({
-          top: section.offsetTop,
+          top: section.offsetTop - headerHeight, // Przewinięcie z korektą
           behavior: "smooth",
         });
       }
