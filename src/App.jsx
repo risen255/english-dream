@@ -102,7 +102,7 @@ const App = () => {
              <img
                src="/images/logo.png"
                alt="Logo"
-               className="absolute left-4 top-1/2 transform -translate-y-1/2 h-22 w-auto z-50 cursor-pointer"
+               className="absolute left-6 top-1/2 transform -translate-y-1/2 h-12 w-auto z-50 cursor-pointer"
                onClick={(e) => scrollToSection(e, "#englishdream")}
              />
 
@@ -303,7 +303,7 @@ const App = () => {
         
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaPhone className="text-blue-500 text-3xl" />
-          <a href="tel:+48507396383" className="text-lg text-gray-800 font-medium hover:text-blue-600">+48 508 552 122</a>
+          <a href="tel:+48508552122" className="text-lg text-gray-800 font-medium hover:text-blue-600">+48 508 552 122</a>
         </div>
 
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
@@ -313,7 +313,7 @@ const App = () => {
         
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaWhatsapp className="text-green-500 text-3xl" />
-          <a href="https://wa.me/48507396383" className="text-lg text-gray-800 font-medium hover:text-green-600">+48 508 552 122</a>
+          <a href="https://wa.me/48508552122" className="text-lg text-gray-800 font-medium hover:text-green-600">+48 508 552 122</a>
         </div>
         
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
