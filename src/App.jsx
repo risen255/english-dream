@@ -318,17 +318,17 @@ const App = () => {
         
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaInstagram className="text-pink-500 text-3xl" />
-          <a href="https://www.instagram.com/instTestAccount" className="text-lg text-gray-800 font-medium hover:text-pink-600">@englishdreamxo</a>
+          <a href="https://www.instagram.com/EnglishDreamXo" className="text-lg text-gray-800 font-medium hover:text-pink-600">@EnglishDreamXo</a>
         </div>
 
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaFacebook className="text-blue-700 text-3xl" />
-          <a href="https://www.facebook.com/testFacebookAccount" className="text-lg text-gray-800 font-medium hover:text-blue-700">@TO DO</a>
+          <a href="https://www.facebook.com/EnglishDreamXo" className="text-lg text-gray-800 font-medium hover:text-blue-700">@EnglishDreamXo</a>
         </div>
         
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaTiktok className="text-black text-3xl" />
-          <a href="https://www.tiktok.com/@tikToktestAccount" className="text-lg text-gray-800 font-medium hover:text-black">@TO DO</a>
+          <a href="https://www.tiktok.com/@EnglishDreamXo" className="text-lg text-gray-800 font-medium hover:text-black">@EnglishDreamXo</a>
         </div>
       </div>
 
@@ -342,6 +342,7 @@ const App = () => {
       </div>
         
         {/* Formularz kontaktowy */}
+        {/*
       <div className="mt-10 w-full max-w-lg bg-white p-6 rounded-2xl shadow-lg">
         <h4 className="text-2xl font-semibold text-gray-900 mb-4">Formularz Kontaktowy</h4>
         <form className="space-y-4" action="mailto:risen255@gmail.com" method="post" encType="text/plain">
@@ -350,7 +351,7 @@ const App = () => {
           <textarea placeholder="Twoja wiadomość" rows="4" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
           <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Wyślij wiadomość</button>
         </form>
-      </div>
+      </div>*/}
     </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
