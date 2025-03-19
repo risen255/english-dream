@@ -117,7 +117,7 @@ const App = () => {
                  isOpen ? "block bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD]" : "hidden"
                } md:block absolute md:relative top-full left-0 w-full md:w-auto p-4 md:p-0`}
              >
-               {["English Dream", "O nas", "Oferta", "Współpraca", "Opinie", "Cennik", "Kontakt"].map((text, index) => {
+               {["English Dream", "O mnie", "Oferta", "Współpraca", "Opinie", "Cennik", "Kontakt"].map((text, index) => {
                  const id = text.toLowerCase().replace(/ /g, "");
                  return (
                    <a
@@ -233,18 +233,13 @@ const App = () => {
         <h2 className="text-4xl font-bold mb-6">Opinie</h2>
         <p className="text-lg mt-4 max-w-2xl">Przeczytaj, co nasi kursanci mówią o swoich doświadczeniach z nauką angielskiego w naszej szkole!</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 w-full max-w-6xl">
-          {[{name: 'Anna Kowalska', opinion: 'Świetne zajęcia! Bardzo profesjonalne podejście i indywidualne podejście do ucznia.', rating: 5},
-            {name: 'Piotr Nowak', opinion: 'Dzięki tym lekcjom w końcu czuję się pewnie mówiąc po angielsku!', rating: 5},
-            {name: 'Magdalena Wiśniewska', opinion: 'Lekcje są ciekawe i dynamiczne. Polecam każdemu!', rating: 5},
-            {name: 'Kamil Dąbrowski', opinion: 'Najlepsza nauczycielka angielskiego, jaką miałem!', rating: 5},
-            {name: 'Ewelina Mazur', opinion: 'Wspaniała atmosfera na lekcjach, nauka jest przyjemnością.', rating: 5},
-            {name: 'Tomasz Lis', opinion: 'Bardzo dobre materiały dydaktyczne i świetne podejście.', rating: 5},
-            {name: 'Karolina Wójcik', opinion: 'Szybkie postępy i dużo praktycznych ćwiczeń.', rating: 5},
-            {name: 'Grzegorz Zawadzki', opinion: 'Doskonałe przygotowanie do egzaminów językowych!', rating: 5},
-            {name: 'Natalia Czerwińska', opinion: 'Zajęcia dostosowane do moich potrzeb, elastyczne terminy.', rating: 5},
-            {name: 'Mateusz Kwiatkowski', opinion: 'Bardzo dobra inwestycja w naukę języka. Polecam!', rating: 5},
-            {name: 'Milena Kowalska', opinion: 'Super, mój język angielski polepszył się niesamowicie!', rating: 5},
-            {name: 'Adam Fijał', opinion: 'Lepszej nauczycielki nie spotkałem!', rating: 5}].map((review, index) => (
+          {[{name: 'Ewa Dawidowicz', opinion: 'Polecamy z całego serca! Mega efekty! Syn z oceny dostatecznej podciągnięty na bardzo dobrą! Bardzo chętnie uczestniczy w zajęciach :-)', rating: 5},
+            {name: 'Paula Kazimierczak', opinion: 'Bardzo polecam zajęcia z Ewą, wprowadza przyjemną atmosferę i nie czujesz się oceniany ☺️ Ma cierpliwość anielską i wszystko tłumaczy aż do zrozumienia ☺️ Bardzo polecam !', rating: 5},
+            {name: 'Hania Burzyńska', opinion: 'Widzę u siebie ogromne postępy, jestem bardzo zadowolona z zajęć, które zawsze są w przyjemnej atmosferze. Bardzo polecam!', rating: 5},
+            {name: 'Kamila Kropiwnicka', opinion: 'Jesteśmy bardzo zadowoleni z zajęć na które uczęszcza nasz syn. Widać ogromne postępy w nauce. Syn również uważa że zajęcia są bardzo ciekawe i przynoszą mu wiele korzyści. Polecam 😊', rating: 5},
+            {name: 'KTS Kluczyk', opinion: 'Syn uczęszcza do Pani Ewy na lekcje j. angielskiego. Widać Jej zaangażowanie oraz wiedzę. Polecam!', rating: 5},
+            {name: 'Marta Kow-cka', opinion: 'Polecam z całego serca ❤️ córka bardzo chętnie uczęszcza na zajęcia. Lekcje prowadzone w swobodnej atmosferze, bardzo ciekawie prowadzone. Nacisk położono na komunikacje.', rating: 5}]
+            .map((review, index) => (
             <div key={index} className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
               <h3 className="text-xl font-bold text-indigo-700">{review.name}</h3>
               <p className="text-gray-700 mt-2">"{review.opinion}"</p>
@@ -308,32 +303,32 @@ const App = () => {
         
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaPhone className="text-blue-500 text-3xl" />
-          <a href="tel:+48507396383" className="text-lg text-gray-800 font-medium hover:text-blue-600">+48 507 396 383</a>
+          <a href="tel:+48507396383" className="text-lg text-gray-800 font-medium hover:text-blue-600">+48 508 552 122</a>
         </div>
 
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaEnvelope className="text-red-500 text-3xl" />
-          <a href="mailto:englishdream@gmail.com" className="text-lg text-gray-800 font-medium hover:text-red-600">englishdream@gmail.com</a>
+          <a href="mailto:englishdream@gmail.com" className="text-base text-gray-800 font-medium hover:text-red-600">contact.englishdream@gmail.com</a>
         </div>
         
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaWhatsapp className="text-green-500 text-3xl" />
-          <a href="https://wa.me/48507396383" className="text-lg text-gray-800 font-medium hover:text-green-600">+48 507 396 383</a>
+          <a href="https://wa.me/48507396383" className="text-lg text-gray-800 font-medium hover:text-green-600">+48 508 552 122</a>
         </div>
         
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaInstagram className="text-pink-500 text-3xl" />
-          <a href="https://www.instagram.com/instTestAccount" className="text-lg text-gray-800 font-medium hover:text-pink-600">@instTestAccount</a>
+          <a href="https://www.instagram.com/instTestAccount" className="text-lg text-gray-800 font-medium hover:text-pink-600">@englishdreamxo</a>
         </div>
 
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaFacebook className="text-blue-700 text-3xl" />
-          <a href="https://www.facebook.com/testFacebookAccount" className="text-lg text-gray-800 font-medium hover:text-blue-700">testFacebookAccount</a>
+          <a href="https://www.facebook.com/testFacebookAccount" className="text-lg text-gray-800 font-medium hover:text-blue-700">@TO DO</a>
         </div>
         
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaTiktok className="text-black text-3xl" />
-          <a href="https://www.tiktok.com/@tikToktestAccount" className="text-lg text-gray-800 font-medium hover:text-black">@tikToktestAccount</a>
+          <a href="https://www.tiktok.com/@tikToktestAccount" className="text-lg text-gray-800 font-medium hover:text-black">@TO DO</a>
         </div>
       </div>
 
@@ -341,9 +336,9 @@ const App = () => {
       <div className="mt-10 w-full max-w-lg bg-white p-6 rounded-2xl shadow-lg text-left flex flex-col items-center transform transition duration-300 hover:scale-105">
         <FaBuilding className="text-gray-700 text-4xl mb-3" />
         <h4 className="text-2xl font-semibold text-gray-900 mb-4">Dane firmy</h4>
-        <p className="text-lg text-gray-800 font-medium"><span className="font-semibold">English Dream Ewa Sieńko</span></p>
-        <p className="text-lg text-gray-800 font-medium">NIP: <span className="font-semibold">12345678</span></p>
-        <p className="text-lg text-gray-800 font-medium">REGON: <span className="font-semibold">66699999</span></p>
+        <p className="text-lg text-gray-800 font-medium"><span className="font-semibold">EnglishAcademy Ewa Sieńko Korepetycje</span></p>
+        <p className="text-lg text-gray-800 font-medium">NIP: <span className="font-semibold">5423494058</span></p>
+        <p className="text-lg text-gray-800 font-medium">REGON: <span className="font-semibold">540475015</span></p>
       </div>
         
         {/* Formularz kontaktowy */}
