@@ -149,16 +149,24 @@ const App = () => {
     	<div className="w-full md:w-1/2">
     	  <h2 className="text-4xl font-bold text-gray-800">O mnie</h2>
     	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
-    		Cześć! Nazywam się Ewa i jestem lektorką języka angielskiego. Od dwóch lat pomagam moim uczniom przełamywać bariery językowe, rozwijać płynność i nabierać pewności siebie w mówieniu.
+    		Cześć! Nazywam się Ewa i jestem pasjonatką języków oraz kreatywnego nauczania. Moja historia
+            zaczyna się w Białymstoku, ale mając 11 lat, przeprowadziłam się do Wielkiej Brytanii. Tam
+            skończyłam szkołę, a później studia magisterskie z architektury.
     	  </p>
     	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
-    		Choć od czterech lat mieszkam w Polsce, całe swoje życie spędziłam w Wielkiej Brytanii – to tam dorastałam, studiowałam i zdobywałam pierwsze doświadczenia zawodowe. Z wykształcenia jestem architektem, ale to właśnie nauczanie języka angielskiego stało się moją prawdziwą pasją i powołaniem.
+    		Po powrocie do Polski w 2020 roku dzieliłam swój czas między pracę jako architekt i nauczanie
+            angielskiego. W końcu pasja do języków wygrała – w 2024 roku zaczęłam uczyć na pełen etat, a od
+            2025 roku prowadzę własną działalność.
     	  </p>
     	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
-    		W swojej pracy kładę duży nacisk na praktyczną komunikację i naturalne użycie języka. Wiem, jak ważne jest, aby nauka była nie tylko skuteczna, ale także przyjemna, dlatego staram się dostosować zajęcia do indywidualnych potrzeb moich uczniów.
+    		W swojej pracy nauczania języka angielskiego kieruję się indywidualnym podejściem do każdego
+            ucznia. Skupiam się na jego specyficznych potrzebach i problemach, dostosowując metody nauki do
+            jego tempa oraz stylu przyswajania wiedzy. Tłumaczę zagadnienia w sposób prosty i zrozumiały,
+            tak by nauka była przyjemnością, a nie stresującym obowiązkiem. Kładę szczególny nacisk na
+            konwersacje, bo uważam, że to klucz do pewności siebie w mówieniu i swobodnej komunikacji.
     	  </p>
     	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0 font-semibold">
-    		Zapraszam do wspólnej nauki! 😊
+    		Jeśli chcesz nauczyć się angielskiego w swobodnej i przyjaznej atmosferze, dobrze trafiłeś! 😊
     	  </p>
     	</div>
       </section>
