@@ -117,7 +117,7 @@ const App = () => {
                  isOpen ? "block bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD]" : "hidden"
                } md:block absolute md:relative top-full left-0 w-full md:w-auto p-4 md:p-0`}
              >
-               {["English Dream", "O mnie", "Oferta", "Współpraca", "Opinie", "Cennik", "Kontakt"].map((text, index) => {
+               {["English Dream", "O nas", "Oferta", "Współpraca", "Opinie", "Cennik", "Kontakt"].map((text, index) => {
                  const id = text.toLowerCase().replace(/ /g, "");
                  return (
                    <a
