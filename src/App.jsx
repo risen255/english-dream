@@ -52,19 +52,19 @@ const App = () => {
     }
   };
 
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const [bgOpacity, setBgOpacity] = useState(0);
 
     useEffect(() => {
       const handleScroll = () => {
-        const onasSection = document.getElementById("onas");
-        if (onasSection) {
-          const onasTop = onasSection.getBoundingClientRect().top;
-          const onasBottom = onasSection.getBoundingClientRect().bottom;
+        const omnieSection = document.getElementById("omnie");
+        if (omnieSection) {
+          const omnieTop = omnieSection.getBoundingClientRect().top;
+          const omnieBottom = omnieSection.getBoundingClientRect().bottom;
 
-          if (onasTop < 50 && onasBottom > 50) {
+          if (omnieTop < 50 && omnieBottom > 50) {
             setBgOpacity(1);
-          } else if (onasTop > 50) {
+          } else if (omnieTop > 50) {
             setBgOpacity(0);
           }
         }
@@ -117,7 +117,7 @@ const App = () => {
                  isOpen ? "block bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD]" : "hidden"
                } md:block absolute md:relative top-full left-0 w-full md:w-auto p-4 md:p-0`}
              >
-               {["English Dream", "O nas", "Oferta", "Współpraca", "Opinie", "Cennik", "Kontakt"].map((text, index) => {
+               {["English Dream", "O mnie", "Oferta", "Współpraca", "Opinie", "Cennik", "Kontakt"].map((text, index) => {
                  const id = text.toLowerCase().replace(/ /g, "");
                  return (
                    <a
@@ -143,7 +143,7 @@ const App = () => {
       </div>
       </section>
 
-      <section id="onas" className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 md:px-12 py-12 md:py-24 animate-shimmer text-center md:text-left">
+      <section id="omnie" className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 md:px-12 py-12 md:py-24 animate-shimmer text-center md:text-left">
     	<img src="/images/me.jpg" alt="O mnie" className="w-2/3 md:w-1/3 max-w-xl rounded-2xl shadow-2xl mb-6 md:mb-0 md:mr-8 transition-all duration-300 hover:scale-105" />
 
     	<div className="w-full md:w-1/2">
@@ -155,8 +155,7 @@ const App = () => {
     	  </p>
     	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
     		Po powrocie do Polski w 2020 roku dzieliłam swój czas między pracę jako architekt i nauczanie
-            angielskiego. W końcu pasja do języków wygrała – w 2024 roku zaczęłam uczyć na pełen etat, a od
-            2025 roku prowadzę własną działalność.
+            angielskiego. W końcu pasja do języków wygrała – w 2024 roku zaczęłam uczyć na pełen etat.
     	  </p>
     	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
     		W swojej pracy nauczania języka angielskiego kieruję się indywidualnym podejściem do każdego
