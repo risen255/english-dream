@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding } from "react-icons/fa";
+import { CheckCircle, Laptop, BookOpen, User, Home, Globe, Sofa } from "lucide-react";
 
 const App = () => {
   const [headline, setHeadline] = useState("");
@@ -9,7 +10,7 @@ const App = () => {
 
   const headlines = [
 
-    "Ucz się angielskiego z najlepszymi!",
+    "Ucz się angielskiego z native speaker!",
     "Rozwijaj swoje umiejętności językowe!",
     "Zostań mistrzem języka angielskiego!"
   ];
@@ -229,19 +230,19 @@ const App = () => {
       </section>
 
       <section id="współpraca" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 via-indigo-500 to-[#0C1C8C] text-white text-center px-6 py-12">
-        <h2 className="text-4xl font-bold mb-6">Współpraca</h2>
+        <h2 className="text-4xl font-bold mb-6">Współpraca dla firm</h2>
         <p className="text-lg mt-4 max-w-2xl">Współpracuję zarówno z klientami indywidualnymi, jak i firmami, oferując szkolenia językowe dostosowane do ich specyficznych potrzeb. Organizuję kursy językowe dla branż takich jak IT, marketing oraz kierunki techniczne.</p>
         <p className="text-lg mt-4 max-w-2xl">Współpracuję również ze szkołami, dostarczając skuteczne metody nauczania oraz wspierając nauczycieli i uczniów w rozwijaniu umiejętności językowych.</p>
         <p className="text-lg mt-4 max-w-2xl">Jeśli interesuje Cię współpraca, skontaktuj się ze mną! Razem ustalimy najlepszą formę współpracy oraz elastyczne warunki wynagrodzenia dostosowane do Twoich potrzeb.</p>
         <p className="text-lg mt-4 max-w-2xl">Gwarantuję wysoką jakość nauczania oraz podejście dopasowane do unikalnych wymagań każdego klienta. Moje szkolenia są skoncentrowane na praktycznych umiejętnościach językowych, które można natychmiast zastosować w codziennej pracy i życiu.</p>
         <p className="text-lg mt-4 max-w-2xl">Dzięki mojemu doświadczeniu i nowoczesnym metodom nauczania pomogę Ci lub Twojemu zespołowi osiągnąć językową pewność siebie w każdej sytuacji – zarówno w kontaktach biznesowych, jak i codziennej komunikacji.</p>
         <p className="text-lg mt-4 max-w-2xl font-semibold">Skontaktuj się ze mną już dziś, aby wspólnie zaplanować skuteczny i elastyczny program nauki!</p>
-        <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Chcę rozpocząć współpracę!</a>
+        <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Zapytaj o ofertę</a>
       </section>
 
       <section id="opinie" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-green-500 via-teal-500 to-blue-500 text-white text-center px-6 py-12">
         <h2 className="text-4xl font-bold mb-6">Opinie</h2>
-        <p className="text-lg mt-4 max-w-2xl">Przeczytaj, co nasi kursanci mówią o swoich doświadczeniach z nauką angielskiego w naszej szkole!</p>
+        <p className="text-lg mt-4 max-w-2xl">Przeczytaj, co moi kursanci mówią o swoich doświadczeniach z nauką angielskiego we współpracy ze mną!</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 w-full max-w-6xl">
           {[{name: 'Ewa Dawidowicz', opinion: 'Polecamy z całego serca! Mega efekty! Syn z oceny dostatecznej podciągnięty na bardzo dobrą! Bardzo chętnie uczestniczy w zajęciach :-)', rating: 5},
             {name: 'Paula Kazimierczak', opinion: 'Bardzo polecam zajęcia z Ewą, wprowadza przyjemną atmosferę i nie czujesz się oceniany ☺️ Ma cierpliwość anielską i wszystko tłumaczy aż do zrozumienia ☺️ Bardzo polecam !', rating: 5},
@@ -264,47 +265,97 @@ const App = () => {
 
       <section id="cennik" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD] text-white text-center px-6 py-12">
         <h2 className="text-4xl font-bold mb-6">Cennik</h2>
-        <p className="text-lg mt-4 max-w-2xl">Zapoznaj się z naszymi atrakcyjnymi cenami kursów. Oferujemy konkurencyjne stawki i elastyczne opcje płatności.</p>
+        <p className="text-lg mt-4 max-w-2xl">Zapoznaj się z atrakcyjnymi cenami. Oferuję konkurencyjne stawki i elastyczne godziny. Szukasz innej formy zajęć? Skontaktuj się ze mną!</p>
         
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 w-full max-w-5xl">
-          <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl text-center border border-gray-200 transition-all hover:scale-105 hover:shadow-xl">
-            <h3 className="text-2xl font-bold text-gray-800">Nauka Online</h3>
-            <p className="text-4xl font-bold text-blue-600 mt-2">80 zł</p>
-            <p className="text-sm text-gray-600 mt-2">za godzinę</p>
-            <ul className="mt-4 text-gray-700">
-              <li className="py-1 border-b">Lekcje 1 na 1</li>
-              <li className="py-1 border-b">Interaktywne materiały</li>
-              <li className="py-1">Dostęp do nagrań</li>
-            </ul>
-            <button className="mt-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">Zapisz się</button>
+          <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl text-center border border-gray-200 transition-all hover:scale-105 hover:shadow-xl flex flex-col justify-between">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800">Nauka Online</h3>
+              <p className="text-4xl font-bold text-blue-600 mt-2">80 zł</p>
+              <p className="text-sm text-gray-600 mt-2">Długość zajęć 50 min</p>
+
+              <ul className="mt-6 space-y-3 text-left text-gray-700">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-blue-500" />
+                  Lekcje 1 na 1
+                </li>
+                <li className="flex items-center gap-2">
+                  <Laptop className="w-5 h-5 text-blue-500" />
+                  Interaktywne materiały
+                </li>
+                <li className="flex items-center gap-2">
+                  <User className="w-5 h-5 text-blue-500" />
+                  Indywidualne podejście
+                </li>
+                <li className="flex items-center gap-2">
+                  <Globe className="w-5 h-5 text-blue-500" />
+                  Nauka bez wychodzenia z domu
+                </li>
+              </ul>
+            </div>
+
+            <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-10 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">Wybierz</a>
           </div>
 
-          <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl text-center border border-blue-500 transition-all hover:scale-110 hover:shadow-3xl">
-            <h3 className="text-2xl font-bold text-gray-800">Nauka Stacjonarna</h3>
-            <p className="text-4xl font-bold text-blue-600 mt-2">90 zł</p>
-            <p className="text-sm text-gray-600 mt-2">za godzinę</p>
-            <ul className="mt-4 text-gray-700">
-              <li className="py-1 border-b">Indywidualne spotkania</li>
-              <li className="py-1 border-b">Materiały drukowane</li>
-              <li className="py-1">Komfortowe miejsce nauki</li>
-            </ul>
-            <button className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Zapisz się</button>
-          </div>
+          <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl text-center border border-blue-500 transition-all hover:scale-110 hover:shadow-3xl flex flex-col justify-between">
+           <div>
+             <h3 className="text-2xl font-bold text-gray-800">Nauka Stacjonarna</h3>
+             <p className="text-4xl font-bold text-blue-600 mt-2">90 zł</p>
+             <p className="text-sm text-gray-600 mt-2">Długość zajęć 50 min</p>
 
-          <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl text-center border border-gray-200 transition-all hover:scale-105 hover:shadow-3xl">
-            <h3 className="text-2xl font-bold text-gray-800">Dojazd do Klienta</h3>
-            <p className="text-4xl font-bold text-blue-600 mt-2">100 zł</p>
-            <p className="text-sm text-gray-600 mt-2">za godzinę</p>
-            <ul className="mt-4 text-gray-700">
-              <li className="py-1 border-b">Lekcje w Twoim domu</li>
-              <li className="py-1 border-b">Indywidualne podejście</li>
-              <li className="py-1">Elastyczny grafik</li>
-            </ul>
-            <button className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">Zapisz się</button>
+             <ul className="mt-6 space-y-3 text-left text-gray-700">
+               <li className="flex items-center gap-2">
+                 <CheckCircle className="w-5 h-5 text-blue-500" />
+                 Lekcje 1 na 1
+               </li>
+               <li className="flex items-center gap-2">
+                 <BookOpen className="w-5 h-5 text-blue-500" />
+                 Materiały drukowane
+               </li>
+               <li className="flex items-center gap-2">
+                 <User className="w-5 h-5 text-blue-500" />
+                 Indywidualne podejście
+               </li>
+               <li className="flex items-center gap-2">
+                 <Home className="w-5 h-5 text-blue-500" />
+                 Komfortowe miejsce nauki
+               </li>
+             </ul>
+           </div>
+
+           <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-10 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">Wybierz</a>
+         </div>
+
+          <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl text-center border border-gray-200 transition-all hover:scale-105 hover:shadow-3xl flex flex-col justify-between">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800">Dojazd do Klienta</h3>
+              <p className="text-4xl font-bold text-blue-600 mt-2">100 zł</p>
+              <p className="text-sm text-gray-600 mt-2">Długość zajęć 50 min</p>
+
+              <ul className="mt-6 space-y-3 text-left text-gray-700">
+                <li className="flex items-center gap-2">
+                  <Home className="w-5 h-5 text-blue-500" />
+                  Lekcje w Twoim domu
+                </li>
+                <li className="flex items-center gap-2">
+                  <BookOpen className="w-5 h-5 text-blue-500" />
+                  Materiały drukowane
+                </li>
+                <li className="flex items-center gap-2">
+                  <User className="w-5 h-5 text-blue-500" />
+                  Indywidualne podejście
+                </li>
+                <li className="flex items-center gap-2">
+                  <Sofa className="w-5 h-5 text-blue-500" />
+                  Nauka w zaciszu własnego domu
+                </li>
+              </ul>
+            </div>
+
+            <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-10 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">Wybierz</a>
           </div>
         </div>
-        
       </section>
 
       <section id="kontakt" className="min-h-[120vh] flex flex-col justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 py-12 text-center animate-fadeIn">
