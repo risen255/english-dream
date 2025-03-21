@@ -144,11 +144,14 @@ const App = () => {
       </section>
 
       <section id="omnie" className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 md:px-12 py-12 md:py-24 animate-shimmer text-center md:text-left">
-    	<img src="/images/me.jpg" alt="O mnie" className="w-2/3 md:w-1/3 max-w-xl rounded-2xl shadow-2xl mb-6 md:mb-0 md:mr-8 transition-all duration-300 hover:scale-105" />
-
-    	<div className="w-full md:w-1/2">
-    	  <h2 className="text-4xl font-bold text-gray-800">O mnie</h2>
-    	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
+        <img
+          src="/images/me.jpg"
+          alt="O mnie"
+          className="w-5/6 md:w-1/3 max-w-xl rounded-2xl shadow-2xl mb-6 md:mb-0 md:mr-12 transition-all duration-300 hover:scale-105"
+        />
+        <div className="w-full md:w-1/2 md:ml-12">
+          <h2 className="text-4xl font-bold text-gray-800">O mnie</h2>
+          <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
     		Cześć! Nazywam się Ewa i jestem pasjonatką języków oraz kreatywnego nauczania. Moja historia
             zaczyna się w Białymstoku, ale mając 11 lat, przeprowadziłam się do Wielkiej Brytanii. Tam
             skończyłam szkołę, a później studia magisterskie z architektury.
