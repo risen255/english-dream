@@ -26,7 +26,7 @@ const App = () => {
         setHeadline(headlines[index]);
         setFade(false);
       }, 800);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 
