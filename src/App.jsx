@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
 import { CheckCircle, Laptop, BookOpen, User, Home, Globe, Sofa } from "lucide-react";
 
 const App = () => {
@@ -95,45 +96,61 @@ const App = () => {
 
   return (
     <div className="font-sans text-gray-900">
-     <header
-             className="fixed top-0 w-full p-4 z-50 shadow-xl backdrop-blur-md transition-all duration-[700ms]"
-             style={{ backgroundColor: `rgba(12, 28, 140, ${bgOpacity})` }}
-           >
-             {/* Logo */}
-             <img
-               src="/images/logo.png"
-               alt="Logo"
-               className="absolute left-6 top-1/2 transform -translate-y-1/2 h-12 w-auto z-50 cursor-pointer"
-               onClick={(e) => scrollToSection(e, "#englishdream")}
-             />
+      <header
+            className="fixed top-0 w-full p-4 z-50 shadow-xl backdrop-blur-md transition-all duration-[700ms]"
+            style={{ backgroundColor: `rgba(12, 28, 140, ${bgOpacity})` }}
+          >
+            {/* Logo */}
+            <img
+              src="/images/logo.png"
+              alt="Logo"
+              className="absolute left-6 top-1/2 transform -translate-y-1/2 h-12 w-auto z-50 cursor-pointer"
+              onClick={(e) => scrollToSection(e, "#englishdream")}
+            />
 
-             <div className="flex justify-end items-center px-4">
-               <button className="md:hidden text-white focus:outline-none" onClick={toggleMenu}>
-                 {isOpen ? "✖" : "☰"}
-               </button>
-             </div>
+            {/* Nawigacja */}
+            <nav
+              className={`md:flex md:justify-center md:space-x-8 text-lg font-semibold text-white ${
+                isOpen
+                  ? "block bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD]"
+                  : "hidden"
+              } md:block absolute md:relative top-full md:top-0 left-0 w-full md:w-auto p-4 md:p-0`}
+            >
+              {["English Dream", "O mnie", "Oferta", "Współpraca", "Opinie", "Cennik", "Kontakt"].map(
+                (text, index) => {
+                  const id = text.toLowerCase().replace(/ /g, "");
+                  return (
+                    <a
+                      key={index}
+                      href={`#${id}`}
+                      onClick={(e) => closeMenu(e, id)}
+                      className="block md:inline relative transition duration-300 group py-2 md:py-0"
+                    >
+                      {text}
+                      <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
+                    </a>
+                  );
+                }
+              )}
+            </nav>
 
-             <nav
-               className={`md:flex md:justify-center md:space-x-8 text-lg font-semibold text-white ${
-                 isOpen ? "block bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD]" : "hidden"
-               } md:block absolute md:relative top-full left-0 w-full md:w-auto p-4 md:p-0`}
-             >
-               {["English Dream", "O mnie", "Oferta", "Współpraca", "Opinie", "Cennik", "Kontakt"].map((text, index) => {
-                 const id = text.toLowerCase().replace(/ /g, "");
-                 return (
-                   <a
-                     key={index}
-                     href={`#${id}`}
-                     onClick={(e) => closeMenu(e, id)}
-                     className="block md:inline relative transition duration-300 group py-2 md:py-0"
-                   >
-                     {text}
-                     <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
-                   </a>
-                 );
-               })}
-             </nav>
-           </header>
+            {/* 🔔 Słuchawka na desktopie – prawa strona */}
+            <FiPhone
+              className="hidden md:block absolute right-6 top-1/2 transform -translate-y-1/2 h-5 w-5 text-white cursor-pointer z-50 hover:text-yellow-300 transition-colors"
+              onClick={() => window.location.href = 'tel:+48123456789'}
+            />
+
+            {/* 📱 Słuchawka + hamburger (mobile) */}
+            <div className="flex justify-end items-center px-4 md:hidden space-x-4">
+              <FiPhone
+                className="h-5 w-5 text-white cursor-pointer hover:text-yellow-300 transition-colors"
+                onClick={() => window.location.href = 'tel:+48123456789'}
+              />
+              <button className="text-white focus:outline-none" onClick={toggleMenu}>
+                {isOpen ? "✖" : "☰"}
+              </button>
+            </div>
+          </header>
 
       <section
         id="englishdream"
