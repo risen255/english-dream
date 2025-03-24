@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
+import { FaFacebookF } from "react-icons/fa";
 import { CheckCircle, Laptop, BookOpen, User, Home, Globe, Sofa } from "lucide-react";
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
 
   const headlines = [
 
-    "Ucz się angielskiego z native speaker!",
+    "Ucz się angielskiego z native speakerem!",
     "Rozwijaj swoje umiejętności językowe!",
     "Bądź mistrzem języka angielskiego!"
   ];
@@ -96,61 +97,111 @@ const App = () => {
 
   return (
     <div className="font-sans text-gray-900">
-      <header
-            className="fixed top-0 w-full p-4 z-50 shadow-xl backdrop-blur-md transition-all duration-[700ms]"
-            style={{ backgroundColor: `rgba(12, 28, 140, ${bgOpacity})` }}
-          >
-            {/* Logo */}
-            <img
-              src="/images/logo.png"
-              alt="Logo"
-              className="absolute left-6 top-1/2 transform -translate-y-1/2 h-12 w-auto z-50 cursor-pointer"
-              onClick={(e) => scrollToSection(e, "#englishdream")}
-            />
+       <header
+             className="fixed top-0 w-full p-4 z-50 shadow-xl backdrop-blur-md transition-all duration-[700ms]"
+             style={{ backgroundColor: `rgba(12, 28, 140, ${bgOpacity})` }}
+           >
+             {/* Logo */}
+             <img
+               src="/images/logo.png"
+               alt="Logo"
+               className="absolute left-6 top-1/2 transform -translate-y-1/2 h-12 w-auto z-50 cursor-pointer"
+               onClick={(e) => scrollToSection(e, "#englishdream")}
+             />
 
-            {/* Nawigacja */}
-            <nav
-              className={`md:flex md:justify-center md:space-x-8 text-lg font-semibold text-white ${
-                isOpen
-                  ? "block bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD]"
-                  : "hidden"
-              } md:block absolute md:relative top-full md:top-0 left-0 w-full md:w-auto p-4 md:p-0`}
-            >
-              {["English Dream", "O mnie", "Oferta", "Współpraca", "Opinie", "Cennik", "Kontakt"].map(
-                (text, index) => {
-                  const id = text.toLowerCase().replace(/ /g, "");
-                  return (
-                    <a
-                      key={index}
-                      href={`#${id}`}
-                      onClick={(e) => closeMenu(e, id)}
-                      className="block md:inline relative transition duration-300 group py-2 md:py-0"
-                    >
-                      {text}
-                      <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
-                    </a>
-                  );
-                }
-              )}
-            </nav>
+             {/* Nawigacja */}
+             <nav
+               className={`md:flex md:justify-center md:space-x-8 text-lg font-semibold text-white ${
+                 isOpen
+                   ? "block bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD]"
+                   : "hidden"
+               } md:block absolute md:relative top-full md:top-0 left-0 w-full md:w-auto p-4 md:p-0`}
+             >
+               {[
+                 "English Dream",
+                 "O mnie",
+                 "Oferta",
+                 "Współpraca",
+                 "Opinie",
+                 "Cennik",
+                 "Kontakt",
+               ].map((text, index) => {
+                 const id = text.toLowerCase().replace(/ /g, "");
+                 return (
+                   <a
+                     key={index}
+                     href={`#${id}`}
+                     onClick={(e) => closeMenu(e, id)}
+                     className="block md:inline relative transition duration-300 group py-2 md:py-0"
+                   >
+                     {text}
+                     <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
+                   </a>
+                 );
+               })}
+             </nav>
 
-            {/* 🔔 Słuchawka na desktopie – prawa strona */}
-            <FiPhone
-              className="hidden md:block absolute right-6 top-1/2 transform -translate-y-1/2 h-5 w-5 text-white cursor-pointer z-50 hover:text-yellow-300 transition-colors"
-              onClick={() => window.location.href = 'tel:+48123456789'}
-            />
+             {/* 📱 Mobile: ikony + hamburger */}
+             <div className="flex justify-end items-center px-4 md:hidden space-x-3">
+               <a
+                 href="https://www.tiktok.com/@EnglishDreamXo"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 <FaTiktok className="h-4 w-4 text-white hover:text-[#69C9D0] transition-colors cursor-pointer" />
+               </a>
+               <a
+                 href="https://www.instagram.com/EnglishDreamXo"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 <FaInstagram className="h-4 w-4 text-white hover:text-pink-400 transition-colors cursor-pointer" />
+               </a>
+               <a
+                 href="https://www.facebook.com/EnglishDreamXo"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 <FaFacebookF className="h-4 w-4 text-white hover:text-blue-500 transition-colors cursor-pointer" />
+               </a>
+               <FiPhone
+                 className="h-4 w-4 text-white hover:text-yellow-300 transition-colors cursor-pointer"
+                 onClick={() => window.location.href = "tel:+48508552122"}
+               />
+               <button className="text-white focus:outline-none" onClick={toggleMenu}>
+                 {isOpen ? "✖" : "☰"}
+               </button>
+             </div>
 
-            {/* 📱 Słuchawka + hamburger (mobile) */}
-            <div className="flex justify-end items-center px-4 md:hidden space-x-4">
-              <FiPhone
-                className="h-5 w-5 text-white cursor-pointer hover:text-yellow-300 transition-colors"
-                onClick={() => window.location.href = 'tel:+48123456789'}
-              />
-              <button className="text-white focus:outline-none" onClick={toggleMenu}>
-                {isOpen ? "✖" : "☰"}
-              </button>
-            </div>
-          </header>
+             {/* 🖥️ Desktop: ikony po prawej stronie */}
+             <div className="hidden md:flex items-center space-x-4 absolute right-6 top-1/2 transform -translate-y-1/2 z-50">
+               <a
+                 href="https://www.tiktok.com/@EnglishDreamXo"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 <FaTiktok className="h-5 w-5 text-white hover:text-[#69C9D0] transition-colors cursor-pointer" />
+               </a>
+               <a
+                 href="https://www.instagram.com/EnglishDreamXo"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 <FaInstagram className="h-5 w-5 text-white hover:text-pink-400 transition-colors cursor-pointer" />
+               </a>
+               <a
+                 href="https://www.facebook.com/EnglishDreamXo"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 <FaFacebookF className="h-5 w-5 text-white hover:text-blue-500 transition-colors cursor-pointer" />
+               </a>
+               <FiPhone
+                 className="h-5 w-5 text-white hover:text-yellow-300 transition-colors cursor-pointer"
+                 onClick={() => window.location.href = "tel:+48508552122"}
+               />
+             </div>
+           </header>
 
       <section
         id="englishdream"
