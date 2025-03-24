@@ -415,13 +415,23 @@ const App = () => {
       </div>
 
       {/* Informacje o firmie */}
-      <div className="mt-10 w-full max-w-lg bg-white p-6 rounded-2xl shadow-lg text-left flex flex-col items-center transform transition duration-300 hover:scale-105">
-        <FaBuilding className="text-gray-700 text-4xl mb-3" />
-        <h4 className="text-2xl font-semibold text-gray-900 mb-4">Dane firmy</h4>
-        <p className="text-lg text-gray-800 font-medium"><span className="font-semibold">EnglishAcademy Ewa Sieńko Korepetycje</span></p>
-        <p className="text-lg text-gray-800 font-medium">NIP: <span className="font-semibold">5423494058</span></p>
-        <p className="text-lg text-gray-800 font-medium">REGON: <span className="font-semibold">540475015</span></p>
-      </div>
+      <div className="mt-10 w-full max-w-lg bg-white p-8 rounded-2xl shadow-xl text-left flex flex-col items-start gap-4 transition-transform duration-300 hover:scale-[1.02]">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="bg-gray-100 p-3 rounded-full">
+                <FaBuilding className="text-gray-700 text-3xl" />
+              </div>
+              <h4 className="text-2xl font-bold text-gray-900">Dane firmy</h4>
+            </div>
+
+            <div className="w-full border-t border-gray-200 my-2" />
+
+            <div className="space-y-2 text-gray-800 text-[17px]">
+              <p><span className="font-semibold">Nazwa:</span> EnglishAcademy Ewa Sieńko Korepetycje</p>
+              <p><span className="font-semibold">Lokalizacja:</span> Białystok, Polska</p>
+              <p><span className="font-semibold">NIP:</span> 5423494058</p>
+              <p><span className="font-semibold">REGON:</span> 540475015</p>
+            </div>
+          </div>
         
         {/* Formularz kontaktowy */}
         {/*
