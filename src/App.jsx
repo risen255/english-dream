@@ -12,7 +12,7 @@ const App = () => {
 
     "Ucz się angielskiego z native speaker!",
     "Rozwijaj swoje umiejętności językowe!",
-    "Zostań mistrzem języka angielskiego!"
+    "Bądź mistrzem języka angielskiego!"
   ];
   let index = 0;
 
@@ -140,7 +140,7 @@ const App = () => {
         <div className="relative z-10 flex flex-col items-center">
         <h1 className={`text-5xl font-extrabold transition-all duration-1000 ease-in-out transform ${fade ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>{headline}</h1>
         <p className="text-xl mt-4 max-w-2xl min-h-[60px]">Dołącz do mojej szkoły i rozwijaj swoje umiejętności językowe w nowoczesny sposób.</p>
-        <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Zacznij już teraz!</a>
+        <a href="#kontakt" onClick={(e) => scrollToSection(e, "#oferta")} className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Dowiedz się więcej!</a>
       </div>
       </section>
 
