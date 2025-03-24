@@ -135,13 +135,34 @@ const App = () => {
              </nav>
            </header>
 
-      <section id="englishdream" className="h-screen flex flex-col justify-center items-center text-white text-center px-6 bg-cover bg-center relative bg-gradient-to-b from-[#0C1C8C] to-transparent" style={{ backgroundImage: "url('/images/background.jpg')" }}>
+      <section
+        id="englishdream"
+        className="h-screen flex flex-col justify-center items-center text-white text-center px-6 bg-cover bg-center relative bg-gradient-to-b from-[#0C1C8C] to-transparent
+          bg-[url('/images/background_mobile.jpg')] md:bg-[url('/images/background_desktop.jpg')]"
+      >
         <div className="absolute inset-0 backdrop-brightness-75"></div>
+
         <div className="relative z-10 flex flex-col items-center">
-        <h1 className={`text-5xl font-extrabold transition-all duration-1000 ease-in-out transform ${fade ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>{headline}</h1>
-        <p className="text-xl mt-4 max-w-2xl min-h-[60px]">Dołącz do mojej szkoły i rozwijaj swoje umiejętności językowe w nowoczesny sposób.</p>
-        <a href="#kontakt" onClick={(e) => scrollToSection(e, "#oferta")} className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Dowiedz się więcej!</a>
-      </div>
+          <h1
+            className={`min-h-[80px] text-5xl font-extrabold transition-all duration-1000 ease-in-out transform ${
+              fade ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
+            }`}
+          >
+            {headline}
+          </h1>
+
+          <p className="text-xl mt-4 max-w-2xl min-h-[60px]">
+            Dołącz do mojej szkoły i rozwijaj swoje umiejętności językowe w nowoczesny sposób.
+          </p>
+
+          <a
+            href="#kontakt"
+            onClick={(e) => scrollToSection(e, "#oferta")}
+            className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5"
+          >
+            Dowiedz się więcej!
+          </a>
+        </div>
       </section>
 
       <section id="omnie" className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 md:px-12 py-12 md:py-24 animate-shimmer text-center md:text-left">
