@@ -437,7 +437,7 @@ const App = () => {
     </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
-        <p>&copy; 2025 Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
+        <p>&copy; 2025 English Dream - Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
       </footer>
     </div>
   );
