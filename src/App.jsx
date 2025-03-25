@@ -247,8 +247,8 @@ const App = () => {
             skończyłam szkołę, a później studia magisterskie z architektury.
     	  </p>
     	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
-    		Po powrocie do Polski w 2020 roku dzieliłam swój czas między pracę jako architekt i nauczanie
-            angielskiego. W końcu pasja do języków wygrała – w 2024 roku zaczęłam uczyć na pełen etat.
+    		Po powrocie do Polski w 2020 roku dzieliłam swój czas między pracę jako architekt, a nauczaniem
+            języka angielskiego. W końcu pasja do języków wygrała – w 2024 roku zaczęłam uczyć na pełen etat.
     	  </p>
     	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
     		W swojej pracy nauczania języka angielskiego kieruję się indywidualnym podejściem do każdego
