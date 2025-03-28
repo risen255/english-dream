@@ -244,8 +244,8 @@ const App = () => {
           <h2 className="text-4xl font-bold text-gray-800">O mnie</h2>
           <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
     		Cześć! Nazywam się Ewa i jestem pasjonatką języków oraz kreatywnego nauczania. Moja historia
-            zaczyna się w Białymstoku, ale mając 11 lat, przeprowadziłam się do Wielkiej Brytanii. Tam
-            skończyłam szkołę, a później studia magisterskie z architektury.
+            zaczęła się w Białymstoku, ale będac małym dzieckiem, przeprowadziłam się do Wielkiej Brytanii. Tam
+            ukończyłam szkołę, a później studia magisterskie z architektury.
     	  </p>
     	  <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
     		Po powrocie do Polski w 2020 roku dzieliłam swój czas między pracę jako architekt, a nauczaniem
