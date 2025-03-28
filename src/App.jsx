@@ -14,7 +14,8 @@ const App = () => {
 
     "Ucz się angielskiego z native speakerem!",
     "Rozwijaj swoje umiejętności językowe!",
-    "Bądź mistrzem języka angielskiego!"
+    "Bądź mistrzem języka angielskiego!",
+    "Dołącz do efektywnego kursu z języka angielskiego!"
   ];
   let index = 0;
 
@@ -141,7 +142,7 @@ const App = () => {
                })}
              </nav>
 
-             {/* 📱 Mobile: ikony + hamburger */}
+             {/* Mobile: ikony + hamburger */}
              <div className="flex justify-end items-center px-4 md:hidden space-x-3">
                <a
                  href="https://www.tiktok.com/@EnglishDreamXo"
@@ -173,7 +174,7 @@ const App = () => {
                </button>
              </div>
 
-             {/* 🖥️ Desktop: ikony po prawej stronie */}
+             {/* Desktop: ikony po prawej stronie */}
              <div className="hidden md:flex items-center space-x-4 absolute right-6 top-1/2 transform -translate-y-1/2 z-50">
                <a
                  href="https://www.tiktok.com/@EnglishDreamXo"
@@ -212,7 +213,7 @@ const App = () => {
 
         <div className="relative z-10 flex flex-col items-center">
           <h1
-            className={`min-h-[80px] text-5xl font-extrabold transition-all duration-1000 ease-in-out transform ${
+            className={`h-[200px] text-5xl font-extrabold transition-all duration-1000 ease-in-out transform overflow-hidden flex items-center justify-center ${
               fade ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
             }`}
           >
