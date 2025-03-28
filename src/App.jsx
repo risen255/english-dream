@@ -220,7 +220,7 @@ const App = () => {
             {headline}
           </h1>
 
-          <p className="text-xl mt-4 max-w-2xl min-h-[60px]">
+          <p className="text-xl mt-4 md:mt-0 max-w-2xl min-h-[60px]">
             Dołącz do mojej szkoły i rozwijaj swoje umiejętności językowe w nowoczesny sposób.
           </p>
 
