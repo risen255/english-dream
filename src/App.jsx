@@ -495,24 +495,12 @@ const App = () => {
             <div className="w-full border-t border-gray-200 my-2" />
 
             <div className="space-y-2 text-gray-800 text-[17px]">
-              <p><span className="font-semibold">Nazwa:</span> EnglishAcademy Ewa Sieńko Korepetycje</p>
+              <p><span className="font-semibold">Nazwa:</span> EnglishDream Ewa Sieńko Korepetycje</p>
               <p><span className="font-semibold">Lokalizacja:</span> Białystok, Polska</p>
               <p><span className="font-semibold">NIP:</span> 5423494058</p>
               <p><span className="font-semibold">REGON:</span> 540475015</p>
             </div>
           </div>
-        
-        {/* Formularz kontaktowy */}
-        {/*
-      <div className="mt-10 w-full max-w-lg bg-white p-6 rounded-2xl shadow-lg">
-        <h4 className="text-2xl font-semibold text-gray-900 mb-4">Formularz Kontaktowy</h4>
-        <form className="space-y-4" action="mailto:risen255@gmail.com" method="post" encType="text/plain">
-          <input type="text" placeholder="Twoje imię" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-          <input type="email" placeholder="Twój email" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
-          <textarea placeholder="Twoja wiadomość" rows="4" className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
-          <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Wyślij wiadomość</button>
-        </form>
-      </div>*/}
     </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
