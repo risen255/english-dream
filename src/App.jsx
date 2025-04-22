@@ -264,7 +264,7 @@ const App = () => {
     	</div>
       </section>
 
-      <section id="oferta" className="min-h-[180vh] flex flex-col justify-center items-center bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white text-center px-6 py-12">
+      <section id="oferta" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white text-center px-6 py-12">
         <h2 className="text-4xl font-bold mb-6">Dlaczego warto uczyć się ze mną?</h2>
         <div className="flex flex-col space-y-6 max-w-3xl w-full items-center">
           <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
