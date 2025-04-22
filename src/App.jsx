@@ -267,53 +267,29 @@ const App = () => {
       <section id="oferta" className="min-h-[180vh] flex flex-col justify-center items-center bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white text-center px-6 py-12">
         <h2 className="text-4xl font-bold mb-6">Dlaczego warto uczyć się ze mną?</h2>
         <div className="flex flex-col space-y-6 max-w-3xl w-full items-center">
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-indigo-700">📝 Indywidualne plany nauki</h3>
-            <p className="text-gray-700 mt-2">Dostosowuję materiały i program nauki do Twoich indywidualnych potrzeb, celów oraz poziomu.</p>
+          <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-indigo-700">📝 Indywidualne podejście</h3>
+            <p className="text-gray-700 mt-2">Nauka z uwzględnieniem indywidualnych potrzeb i stylu uczenia się.</p>
           </div>
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+          <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
             <h3 className="text-xl font-bold text-indigo-700">📈 Szybkie efekty</h3>
             <p className="text-gray-700 mt-2">Dzięki sprawdzonym metodom nauki osiągniesz szybkie postępy w płynności językowej i zrozumieniu angielskiego.</p>
           </div>
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-indigo-700">🎭 Interaktywne lekcje</h3>
-            <p className="text-gray-700 mt-2">Stosuję nowoczesne techniki, gry edukacyjne i scenariusze sytuacyjne, aby nauka była angażująca i skuteczna.</p>
-          </div>
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+          <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
             <h3 className="text-xl font-bold text-indigo-700">🎓 Przygotowanie do egzaminów</h3>
-            <p className="text-gray-700 mt-2">Pomagam w przygotowaniach do matury, certyfikatów językowych oraz egzaminów akademickich i zawodowych.</p>
+            <p className="text-gray-700 mt-2">Wspieram uczniów w zrozumieniu materiału szkolnego i przygotowaniu do egzaminu ósmoklasisty i matury.</p>
           </div>
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-indigo-700">🌐 Angielski w realnym świecie</h3>
-            <p className="text-gray-700 mt-2">Uczę praktycznych umiejętności językowych, które ułatwią Ci podróże, rozmowy kwalifikacyjne i codzienną komunikację.</p>
+          <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-indigo-700">💡 Ciekawe lekcje</h3>
+            <p className="text-gray-700 mt-2">Nowoczesne techniki, gry edukacyjne i scenariusze sytuacyjne, aby nauka była angażująca i skuteczna.</p>
           </div>
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-indigo-700">🎯 Indywidualne podejście</h3>
-            <p className="text-gray-700 mt-2">Dostosowuję naukę do Twoich potrzeb, tempa i celów, abyś osiągnął najlepsze rezultaty.</p>
+          <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-indigo-700">🗣️ Nacisk na mówienie</h3>
+            <p className="text-gray-700 mt-2">Przełamuje bariery językowe i zapewniam pełne wsparcie w nauce.</p>
           </div>
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-indigo-700">💡 Mentoring i wsparcie</h3>
-            <p className="text-gray-700 mt-2">Zapewniam pełne wsparcie w nauce, motywuję do systematycznej pracy i pomagam w budowaniu pewności siebie w mówieniu.</p>
-          </div>
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-indigo-700">🗣️ Płynność mówienia</h3>
-            <p className="text-gray-700 mt-2">Pomagam przełamać bariery językowe i uczyć się poprzez praktykę rozmów w różnych sytuacjach.</p>
-          </div>
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-indigo-700">📚 Pomoc w nauce szkolnej</h3>
-            <p className="text-gray-700 mt-2">Wspieram uczniów w zrozumieniu materiału szkolnego i przygotowaniu do egzaminów.</p>
-          </div>
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-indigo-700">👦 Nauka dla dzieci</h3>
-            <p className="text-gray-700 mt-2">Tworzę angażujące i interaktywne zajęcia, dostosowane do najmłodszych uczniów.</p>
-          </div>
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-indigo-700">💼 Język angielski w biznesie</h3>
-            <p className="text-gray-700 mt-2">Pomagam profesjonalistom rozwijać umiejętności językowe potrzebne w środowisku pracy.</p>
-          </div>
-          <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-indigo-700">🌍 Angielski do podróży</h3>
-            <p className="text-gray-700 mt-2">Nauczysz się przydatnych zwrotów i komunikacji w podróży bez stresu.</p>
+          <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-indigo-700">🌍 Angielski w realnym świecie</h3>
+            <p className="text-gray-700 mt-2">Uczę praktycznych umiejętności językowych przydatnych w codziennym życiu.</p>
           </div>
           <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Chcę uczyć się już od zaraz!</a>
         </div>
@@ -391,7 +367,7 @@ const App = () => {
           <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl text-center border border-blue-500 transition-all hover:scale-110 hover:shadow-3xl flex flex-col justify-between">
            <div>
              <h3 className="text-2xl font-bold text-gray-800">Nauka Stacjonarna</h3>
-             <p className="text-4xl font-bold text-blue-600 mt-2">90 zł</p>
+             <p className="text-4xl font-bold text-blue-600 mt-2">100 zł</p>
              <p className="text-sm text-gray-600 mt-2">Długość zajęć 50 min</p>
 
              <ul className="mt-6 space-y-3 text-left text-gray-700">
@@ -420,7 +396,7 @@ const App = () => {
           <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl text-center border border-gray-200 transition-all hover:scale-105 hover:shadow-3xl flex flex-col justify-between">
             <div>
               <h3 className="text-2xl font-bold text-gray-800">Dojazd do Klienta</h3>
-              <p className="text-4xl font-bold text-blue-600 mt-2">100 zł</p>
+              <p className="text-4xl font-bold text-blue-600 mt-2">120 zł</p>
               <p className="text-sm text-gray-600 mt-2">Długość zajęć 50 min</p>
 
               <ul className="mt-6 space-y-3 text-left text-gray-700">
