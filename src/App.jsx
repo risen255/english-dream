@@ -338,7 +338,7 @@ const App = () => {
           <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl text-center border border-gray-200 transition-all hover:scale-105 hover:shadow-xl flex flex-col justify-between">
             <div>
               <h3 className="text-2xl font-bold text-gray-800">Nauka Online</h3>
-              <p className="text-4xl font-bold text-blue-600 mt-2">80 zł</p>
+              <p className="text-4xl font-bold text-blue-600 mt-2">90 zł</p>
               <p className="text-sm text-gray-600 mt-2">Długość zajęć 50 min</p>
 
               <ul className="mt-6 space-y-3 text-left text-gray-700">
