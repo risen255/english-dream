@@ -435,7 +435,7 @@ const App = () => {
 
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaEnvelope className="text-red-500 text-3xl" />
-          <a href="mailto:englishdream@gmail.com" className="text-base text-gray-800 font-medium hover:text-red-600">contact.englishdream@gmail.com</a>
+          <a href="mailto:contact@englishdream.pl" className="text-base text-gray-800 font-medium hover:text-red-600">contact@englishdream.pl</a>
         </div>
         
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
