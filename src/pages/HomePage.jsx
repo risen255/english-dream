@@ -122,6 +122,7 @@ const HomePage = () => {
                  "English Dream",
                  "O mnie",
                  "Oferta",
+                 "Pliki do pobrania",
                  "Współpraca",
                  "Opinie",
                  "Cennik",
@@ -294,6 +295,22 @@ const HomePage = () => {
           <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Chcę uczyć się już od zaraz!</a>
         </div>
       </section>
+
+      <section id="plikidopobrania" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-orange-400 to-red-600 text-white text-center px-6 py-12">
+         <h2 className="text-4xl font-bold mb-6">Pliki do pobrania</h2>
+         <p className="text-lg mt-4 max-w-2xl">Zapoznaj się z darmowy e-bookami!</p>
+
+         <div className="grid grid-cols-1 gap-8 mt-8 w-auto max-w-5xl justify-center mx-auto">
+           <div className="flex flex-col items-center">
+              <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
+                <img src="/images/ebook.jpg" className="w-full h-120 object-cover"/>
+              </div>
+             <a href="/#darmowy-ebook" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
+               Pobierz darmowego e-booka
+             </a>
+            </div>
+         </div>
+     </section>
 
       <section id="współpraca" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 via-indigo-500 to-[#0C1C8C] text-white text-center px-6 py-12">
         <h2 className="text-4xl font-bold mb-6">Współpraca dla firm</h2>
