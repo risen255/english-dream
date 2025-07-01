@@ -298,7 +298,7 @@ const HomePage = () => {
 
       <section id="plikidopobrania" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-orange-400 to-red-600 text-white text-center px-6 py-12">
          <h2 className="text-4xl font-bold mb-6">Pliki do pobrania</h2>
-         <p className="text-lg mt-4 max-w-2xl">Zapoznaj się z darmowy e-bookami!</p>
+         <p className="text-lg mt-4 max-w-2xl">Zapoznaj się z darmowymi e-bookami!</p>
 
          <div className="grid grid-cols-1 gap-8 mt-8 w-auto max-w-5xl justify-center mx-auto">
            <div className="flex flex-col items-center">
