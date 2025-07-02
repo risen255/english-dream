@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const RedirectToFreeEbook = () => {
+const FreeEbookIrregularVerbs = () => {
   useEffect(() => {
     window.location.href = "https://tinyurl.com/englishdreamebook";
   }, []);
@@ -8,4 +8,4 @@ const RedirectToFreeEbook = () => {
   return <p>Ładowanie...</p>;
 };
 
-export default RedirectToFreeEbook;
+export default FreeEbookIrregularVerbs;
