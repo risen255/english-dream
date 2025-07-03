@@ -303,7 +303,7 @@ const HomePage = () => {
          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-auto max-w-5xl justify-center mx-auto">
            <div className="flex flex-col items-center">
               <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
-                <img src="/images/ebook.jpg" className="w-full h-100 object-cover"/>
+                <img src="/images/free_ebook_irregular_verbs.jpg" className="w-full h-100 object-cover"/>
               </div>
              <a href="/#darmowy-ebook-czasowniki-nieregularne" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
                Pobierz darmowego e-booka
@@ -311,9 +311,9 @@ const HomePage = () => {
             </div>
             <div className="flex flex-col items-center">
                <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
-                 <img src="/images/ebook.jpg" className="w-full h-100 object-cover"/>
+                 <img src="/images/free_ebook_5wayswords.jpg" className="w-full h-100 object-cover"/>
                </div>
-              <a href="/#darmowy-ebook-placeholder" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
+              <a href="/#darmowy-ebook-5-sposobow-na-nauke-angielskich-slowek" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
                 Pobierz darmowego e-booka
               </a>
              </div>
