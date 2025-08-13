@@ -496,7 +496,7 @@ const HomePage = () => {
             <div className="w-full border-t border-gray-200 my-2" />
 
             <div className="space-y-2 text-gray-800 text-[17px]">
-              <p><span className="font-semibold">Nazwa:</span> EnglishDream Ewa Sieńko Korepetycje</p>
+              <p><span className="font-semibold">Nazwa:</span> EnglishDream Ewa Łomotowska Korepetycje</p>
               <p><span className="font-semibold">Lokalizacja:</span> Białystok, Polska</p>
               <p><span className="font-semibold">NIP:</span> 5423494058</p>
               <p><span className="font-semibold">REGON:</span> 540475015</p>
