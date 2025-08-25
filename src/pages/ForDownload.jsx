@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
-import { CheckCircle, Laptop, BookOpen, User, Home, Globe, Sofa } from "lucide-react";
 
 const ForDownload = () => {
   const [headline, setHeadline] = useState("");
@@ -40,7 +39,6 @@ const ForDownload = () => {
                  "English Dream",
                  "O mnie",
                  "Oferta",
-                 "Kursy",
                  "Do pobrania",
                  "Współpraca",
                  "Opinie",

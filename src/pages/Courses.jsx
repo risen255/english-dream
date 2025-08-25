@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
-import { CheckCircle, Laptop, BookOpen, User, Home, Globe, Sofa } from "lucide-react";
+import { ShoppingCartIcon } from '@heroicons/react/24/solid';
 
 const Courses = () => {
   const [headline, setHeadline] = useState("");
@@ -40,7 +40,6 @@ const Courses = () => {
                  "English Dream",
                  "O mnie",
                  "Oferta",
-                 "Kursy",
                  "Do pobrania",
                  "Współpraca",
                  "Opinie",
@@ -132,18 +131,62 @@ const Courses = () => {
 
       <section id="kursy" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 via-indigo-500 to-[#0C1C8C] text-white text-center px-6 py-12 pt-24">
          <h2 className="text-4xl font-bold mb-6">Kursy</h2>
-         <p className="text-lg mt-4 max-w-2xl">Zapoznaj się z kursami!</p>
+         <p className="text-lg mt-4 max-w-2xl">🌟 STRONA W BUDOWIE... WORK IN PROGRESS...</p>
+         <p className="text-4xl mt-4 max-w-2xl">🌟 Odkryj nasze kursy i naucz się angielskiego szybciej!</p>
+         <p className="text-4xl mt-4 max-w-2xl">📘 Zrozumiesz gramatykę i słownictwo w praktyce</p>
+         <p className="text-4xl mt-4 max-w-2xl">🚀 Podnieś swoje umiejętności i zacznij mówić pewniej!</p>
+         <p className="text-lg mt-4 max-w-3xl">
+             🌟 Chcesz swobodnie mówić po angielsku i wreszcie zrozumieć jego tajniki?
+             Nasze kursy zostały stworzone z myślą o osobach, które pragną szybciej i skuteczniej przyswajać wiedzę.
+             📘 Dzięki praktycznym lekcjom poznasz najważniejsze reguły gramatyki, nauczysz się użytecznych słówek i zwrotów, które od razu zastosujesz w codziennej rozmowie.
+             🚀 Każdy kurs to kompleksowy przewodnik, który poprowadzi Cię krok po kroku – od podstaw po zaawansowane struktury językowe.
+         </p>
 
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-auto max-w-5xl justify-center mx-auto">
-           <div className="flex flex-col items-center">
-              <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
-                <img src="/images/free_ebook_irregular_verbs.jpg" className="w-full h-100 object-cover"/>
+         <p className="text-2xl mt-4 max-w-2xl"><strong>👩‍🎓👨‍🎓 Dla kogo jest kurs?</strong> Dla każdego, kto chce szybko zacząć mówić po angielsku – zarówno początkujących, jak i osób chcących utrwalić swoją wiedzę.</p>
+         <p className="text-2xl mt-4 max-w-2xl"><strong>Dlaczego warto?</strong> Bo kurs łączy teorię z praktyką, pozwala uczyć się w dowolnym tempie i daje realne narzędzia do codziennej komunikacji.</p>
+         <p className="text-2xl mt-4 max-w-2xl"><strong>⏱ Kiedy widać efekty?</strong> Dzięki regularnej nauce już po kilku tygodniach zauważysz poprawę w rozumieniu i płynności mówienia.</p>
+         <p className="text-2xl mt-4 max-w-2xl">Zainwestuj w siebie i rozwijaj swoje umiejętności w przyjazny, interaktywny sposób – nauka angielskiego nigdy nie była tak przyjemna!</p>
+
+        <div className="flex justify-center mt-8 w-full max-w-sm mx-auto">
+          <div className="flex flex-col items-center">
+            <div className="bg-white text-gray-900 rounded-2xl shadow-2xl text-center overflow-hidden w-96 h-96 p-6 transition-all hover:scale-105 hover:shadow-3xl flex flex-col justify-between">
+
+              {/* Nagłówek kursu */}
+              <h3 className="text-2xl font-bold mb-2">Opanuj angielski w 30 dni!</h3>
+
+              {/* Krótki opis */}
+              <p className="text-md mb-4">
+                Naucz się mówić po angielsku szybciej dzięki naszym praktycznym lekcjom i interaktywnym ćwiczeniom.
+              </p>
+
+              {/* Ikony korzyści */}
+              <div className="flex justify-around mb-4">
+                <span className="flex flex-col items-center">
+                  📘
+                  <span className="text-sm mt-1">Gramatyka</span>
+                </span>
+                <span className="flex flex-col items-center">
+                  🚀
+                  <span className="text-sm mt-1">Szybkie postępy</span>
+                </span>
+                <span className="flex flex-col items-center">
+                  🎤
+                  <span className="text-sm mt-1">Praktyka mówienia</span>
+                </span>
               </div>
-              <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">
-                  Kup kurs
+
+              {/* Przycisk kupna */}
+              <a
+                href="https://englishdream.systeme.io/presentsimple-a6c63763"
+                className="bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
+              >
+                <ShoppingCartIcon className="w-5 h-5" />
+                Kup kurs
               </a>
+
             </div>
-         </div>
+          </div>
+        </div>
       </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">

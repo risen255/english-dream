@@ -122,7 +122,6 @@ const HomePage = () => {
                  "English Dream",
                  "O mnie",
                  "Oferta",
-                 "Kursy",
                  "Do pobrania",
                  "Współpraca",
                  "Opinie",
