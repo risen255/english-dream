@@ -4,9 +4,6 @@ import { FiPhone } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 
 const ForDownload = () => {
-  const [headline, setHeadline] = useState("");
-  const [isAnimating, setIsAnimating] = useState(false);
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

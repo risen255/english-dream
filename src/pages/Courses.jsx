@@ -5,9 +5,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { ShoppingCartIcon } from '@heroicons/react/24/solid';
 
 const Courses = () => {
-  const [headline, setHeadline] = useState("");
-  const [isAnimating, setIsAnimating] = useState(false);
-
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
