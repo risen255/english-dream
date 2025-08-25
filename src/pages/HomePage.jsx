@@ -122,6 +122,7 @@ const HomePage = () => {
                  "English Dream",
                  "O mnie",
                  "Oferta",
+                 "Kursy",
                  "Do pobrania",
                  "Współpraca",
                  "Opinie",
@@ -129,16 +130,22 @@ const HomePage = () => {
                  "Kontakt",
                ].map((text, index) => {
                  const id = text.toLowerCase().replace(/ /g, "");
+
+                  // sprawdzamy, czy to "Kursy" lub "Do pobrania"
+                 const isSubpage = text === "Kursy" ? "/#kursy" : text === "Do pobrania" ? "/#do-pobrania" : null;
+
                  return (
-                   <a
-                     key={index}
-                     href={`#${id}`}
-                     onClick={(e) => closeMenu(e, id)}
-                     className="block md:inline relative transition duration-300 group py-2 md:py-0"
-                   >
-                     {text}
-                     <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
-                   </a>
+                  <a
+                      key={index}
+                      href={isSubpage || `#${id}`} // jeśli podstrona → /kursy lub /do-pobrania, w innym wypadku #id
+                      onClick={(e) => {
+                        if (!isSubpage) closeMenu(e, id); // zamykamy menu tylko dla sekcji onepage
+                      }}
+                      className="block md:inline relative transition duration-300 group py-2 md:py-0"
+                  >
+                      {text}
+                      <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
+                  </a>
                  );
                })}
              </nav>
@@ -296,30 +303,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section id="dopobrania" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-orange-400 to-red-600 text-white text-center px-6 py-12">
-         <h2 className="text-4xl font-bold mb-6">Do pobrania</h2>
-         <p className="text-lg mt-4 max-w-2xl">Zapoznaj się z darmowymi e-bookami!</p>
-
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-auto max-w-5xl justify-center mx-auto">
-           <div className="flex flex-col items-center">
-              <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
-                <img src="/images/free_ebook_irregular_verbs.jpg" className="w-full h-100 object-cover"/>
-              </div>
-             <a href="/#darmowy-ebook-czasowniki-nieregularne" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
-               Pobierz darmowego e-booka
-             </a>
-            </div>
-            <div className="flex flex-col items-center">
-               <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
-                 <img src="/images/free_ebook_5wayswords.jpg" className="w-full h-100 object-cover"/>
-               </div>
-              <a href="/#darmowy-ebook-5-sposobow-na-nauke-angielskich-slowek" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
-                Pobierz darmowego e-booka
-              </a>
-             </div>
-         </div>
-     </section>
-
       <section id="współpraca" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 via-indigo-500 to-[#0C1C8C] text-white text-center px-6 py-12">
         <h2 className="text-4xl font-bold mb-6">Współpraca dla firm</h2>
         <p className="text-lg mt-4 max-w-2xl">Współpracuję zarówno z klientami indywidualnymi, jak i firmami, oferując szkolenia językowe dostosowane do ich specyficznych potrzeb. Organizuję kursy językowe dla branż takich jak IT, marketing oraz kierunki techniczne.</p>
@@ -355,7 +338,7 @@ const HomePage = () => {
       </section>
 
       <section id="cennik" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD] text-white text-center px-6 py-12">
-        <h2 className="text-4xl font-bold mb-6">Cennik</h2>
+        <h2 className="text-4xl font-bold mb-6">Cennik lekcji</h2>
         <p className="text-lg mt-4 max-w-2xl">Zapoznaj się z atrakcyjnymi cenami. Oferuję konkurencyjne stawki i elastyczne godziny. Szukasz innej formy zajęć? Skontaktuj się ze mną!</p>
         
         
