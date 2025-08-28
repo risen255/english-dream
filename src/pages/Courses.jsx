@@ -165,7 +165,7 @@ const Courses = () => {
 
                  {/* Przycisk Kup kurs teraz */}
                  <a
-                   href="https://englishdream.systeme.io/presentsimple"
+                   href="https://englishdream.systeme.io/pakietpresentsimple"
                    className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
                  >
                    <ShoppingCartIcon className="w-5 h-5" />
