@@ -4,7 +4,7 @@ import { FiPhone } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 import { ShoppingCartIcon, InformationCircleIcon, AcademicCapIcon  } from '@heroicons/react/24/solid';
 
-const Courses = () => {
+const PresentSimpleBezSciemy = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -138,123 +138,21 @@ const Courses = () => {
            </header>
 
          <section
-           id="kursy-landing-page"
+           id="present-simple-bez-sciemy"
            className="min-h-screen flex flex-col justify-start items-center bg-gradient-to-r from-blue-500 via-indigo-500 to-[#0C1C8C] text-white text-center px-6 py-12 pt-16"
          >
-           <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
-             {/* Obrazek */}
-             <img
-               src="/images/courses/present-simple-3-in-1.png"
-               className="w-160 h-auto"
-             />
-
-             {/* Tekst po prawej stronie */}
-             <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
-               <h2 className="text-4xl lg:text-5xl font-bold mb-6 tracking-wide text-center lg:text-left">
-                 W pakiecie taniej!
-               </h2>
-
-               <div className="space-y-4 text-lg lg:text-xl">
-                 <p className="leading-relaxed">
-                   Fantastyczny kurs{" "}
-                   <span className="font-bold">Present simple bez ściemy</span> i{" "}
-                   <span className="font-bold">Ćwiczeniowy Power Pack</span> do
-                   utrwalenia wiedzy w atrakcyjnej cenie!
-                 </p>
-               </div>
-
-               {/* Div z ceną */}
-               <div className="mt-6 text-left space-y-2 text-lg lg:text-xl">
-                 <p class="text-sm">Cena regularna: <span className="line-through">198.60 PLN</span></p>
-                 <p>Aktualna cena: <span className="font-bold text-yellow-400">64 PLN</span></p>
-                 <p class="text-sm">Najniższa cena w ciągu ostatnich 30 dni: 64 PLN</p>
-               </div>
-
-               {/* Przyciski pod ceną */}
-               <div className="flex flex-col gap-2 mt-6 items-center lg:items-start">
-                 {/* Przycisk Dowiedz się więcej */}
-                 <a
-                   href="/#present-simple-bez-sciemy"
-                   className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
-                 >
-                   <InformationCircleIcon className="w-5 h-5" />
-                   Dowiedz się więcej
-                 </a>
-
-                 {/* Przycisk Kup kurs teraz */}
-                 <a
-                   href="https://englishdream.systeme.io/pakietpresentsimple"
-                   className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
-                 >
-                   <ShoppingCartIcon className="w-5 h-5" />
-                   Kup teraz
-                 </a>
-               </div>
-             </div>
-           </div>
-          <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8 mt-16 lg:mt-0">
-             <a
-                href="/"
-                className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
-                onClick={(e) => scrollToSection(e, "#listakursow")}
-              >
-                <AcademicCapIcon className="w-5 h-5" />
-                Poznaj też inne kursy
-             </a>
+            <div>
+                 Present simple bez ściemy
+                 Lekcje są krótkie, konkretne i treściwe. Możesz je oglądać o dowolnej
+                 porze i wracać do nich tyle razy, ile potrzebujesz. Uczysz się poprzez
+                 słuchanie, powtarzanie oraz rozwiązywanie zadań w specjalnie
+                 przygotowanym przeze mnie pliku PDF, który pomoże Ci utrwalić
+                 zdobytą wiedzę.
+                 Aby rozpocząć kurs, wystarczy, że znasz podstawowe zaimki osobowe
+                 – nie musisz obawiać się braków w słownictwie. Wszystko zostało
+                 wyjaśnione jasno, prosto i bez lania wody.
           </div>
-         </section>
-
-         <section
-            id="listakursow"
-            className="min-h-screen flex flex-col justify-start items-center bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white text-center px-6 py-12 pt-16"
-          >
-            <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
-              {/* Obrazek */}
-              <img
-                src="/images/courses/present-simple-single.png"
-                className="w-160 h-auto"
-              />
-
-              {/* Tekst po prawej stronie */}
-              <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
-                <h2 className="text-4xl lg:text-5xl font-bold mb-6 tracking-wide text-center lg:text-left">
-                  Present simple bez ściemy
-                </h2>
-
-                <div className="space-y-4 text-lg lg:text-xl">
-                  <p className="text-lg">
-                    Praktyczny kurs - nauka która działa w realnym życiu
-                    To kurs wideo czasu present simple, stworzony specjalnie dla osób,
-                    które mają dość skomplikowanych regułek i sztywnej gramatyki. Ten
-                    kurs pokaże Ci, że czas Present Simple to nic trudnego. Uczę go tak,
-                    jak naprawdę używa się go na co dzień – naturalnie, tak jak mówią
-                    native speakerzy (i ja sama!).
-                  </p>
-                </div>
-
-                {/* Przyciski pod ceną */}
-                <div className="flex flex-col gap-2 mt-6 items-center lg:items-start">
-                  {/* Przycisk Dowiedz się więcej */}
-                  <a
-                    href="/#present-simple-bez-sciemy"
-                    className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
-                  >
-                    <InformationCircleIcon className="w-5 h-5" />
-                    Dowiedz się więcej
-                  </a>
-
-                  {/* Przycisk Kup kurs teraz */}
-                  <a
-                    href="https://englishdream.systeme.io/pakietpresentsimple"
-                    className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
-                  >
-                    <ShoppingCartIcon className="w-5 h-5" />
-                    Kup teraz
-                  </a>
-                </div>
-              </div>
-            </div>
-      </section>
+     </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
         <p>&copy; 2025 English Dream - Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
@@ -263,4 +161,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default PresentSimpleBezSciemy;
