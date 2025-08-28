@@ -122,8 +122,8 @@ const HomePage = () => {
                  "English Dream",
                  "O mnie",
                  "Oferta",
+                 "Kursy",
                  "Do pobrania",
-                 "Współpraca",
                  "Opinie",
                  "Cennik",
                  "Kontakt",
@@ -300,17 +300,6 @@ const HomePage = () => {
           </div>
           <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Chcę uczyć się już od zaraz!</a>
         </div>
-      </section>
-
-      <section id="współpraca" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 via-indigo-500 to-[#0C1C8C] text-white text-center px-6 py-12">
-        <h2 className="text-4xl font-bold mb-6">Współpraca dla firm</h2>
-        <p className="text-lg mt-4 max-w-2xl">Współpracuję zarówno z klientami indywidualnymi, jak i firmami, oferując szkolenia językowe dostosowane do ich specyficznych potrzeb. Organizuję kursy językowe dla branż takich jak IT, marketing oraz kierunki techniczne.</p>
-        <p className="text-lg mt-4 max-w-2xl">Współpracuję również ze szkołami, dostarczając skuteczne metody nauczania oraz wspierając nauczycieli i uczniów w rozwijaniu umiejętności językowych.</p>
-        <p className="text-lg mt-4 max-w-2xl">Jeśli interesuje Cię współpraca, skontaktuj się ze mną! Razem ustalimy najlepszą formę współpracy oraz elastyczne warunki wynagrodzenia dostosowane do Twoich potrzeb.</p>
-        <p className="text-lg mt-4 max-w-2xl">Gwarantuję wysoką jakość nauczania oraz podejście dopasowane do unikalnych wymagań każdego klienta. Moje szkolenia są skoncentrowane na praktycznych umiejętnościach językowych, które można natychmiast zastosować w codziennej pracy i życiu.</p>
-        <p className="text-lg mt-4 max-w-2xl">Dzięki mojemu doświadczeniu i nowoczesnym metodom nauczania pomogę Ci lub Twojemu zespołowi osiągnąć językową pewność siebie w każdej sytuacji – zarówno w kontaktach biznesowych, jak i codziennej komunikacji.</p>
-        <p className="text-lg mt-4 max-w-2xl font-semibold">Skontaktuj się ze mną już dziś, aby wspólnie zaplanować skuteczny i elastyczny program nauki!</p>
-        <a href="#kontakt" onClick={(e) => scrollToSection(e, "#kontakt")} className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Zapytaj o ofertę</a>
       </section>
 
       <section id="opinie" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-green-500 via-teal-500 to-blue-500 text-white text-center px-6 py-12">
