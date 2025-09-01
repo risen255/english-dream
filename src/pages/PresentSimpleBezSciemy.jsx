@@ -183,7 +183,89 @@ const PresentSimpleBezSciemy = () => {
                className="w-160 h-auto"
              />
            </div>
-         </section>
+
+           {/* Div z ceną */}
+           <div className="mt-6 text-left space-y-2 text-lg lg:text-xl">
+             <p class="text-sm">Cena regularna: <span className="line-through">168 PLN</span></p>
+             <p>Aktualna cena: <span className="font-bold text-yellow-400">47 PLN</span></p>
+             <p class="text-sm">Najniższa cena w ciągu ostatnich 30 dni: 47 PLN</p>
+           </div>
+
+           {/* Przyciski pod ceną */}
+           <div className="flex flex-col gap-2 mt-6 items-center lg:items-start">
+             {/* Przycisk Kup kurs teraz */}
+             <a
+               href="https://englishdream.systeme.io/presentsimple"
+               className="bg-yellow-400 text-gray-900 w-74 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
+             >
+               <ShoppingCartIcon className="w-5 h-5" />
+               Kup teraz
+             </a>
+           </div>
+      </section>
+
+      <section
+          id="present-simple-bez-sciemy-inside"
+          className="min-h-screen flex flex-col justify-start items-center bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white text-center px-6 py-12 pt-16"
+        >
+           <h2 className="text-4xl lg:text-5xl font-bold mb-10 lg:mb-10 tracking-wide text-center lg:text-left">Co znajdziesz w kursie?</h2>
+
+           <div className="flex flex-col items-center justify-center max-w-4xl mx-auto gap-6">
+             <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+               <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                 Podstawy i zasady gramatyczne
+               </h3>
+               <h3 className="text-lg font-medium leading-snug text-black">
+                 Wytłumaczone prosto, bez zbędnych terminów.
+               </h3>
+             </div>
+
+             <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+               <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                 Codzienne przykłady
+               </h3>
+               <h3 className="text-lg font-medium leading-snug text-black">
+                 Realne sytuacje, które faktycznie się przydają, a nie sztuczne dialogi z podręczników.
+               </h3>
+             </div>
+
+             <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                  Rozszerzenie słownictwa
+                </h3>
+                <h3 className="text-lg font-medium leading-snug text-black">
+                  Uczysz się nie tylko konstrukcji, ale też nowych, przydatnych słów.
+                </h3>
+             </div>
+
+             <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                 <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                   Ćwiczenia do utrwalania
+                 </h3>
+                 <h3 className="text-lg font-medium leading-snug text-black">
+                   Dostajesz specjalny zeszyt ćwiczeń, który możesz uzupełniać w trakcie kursu.
+                 </h3>
+             </div>
+
+             <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                  <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                    Zadania bonusowe
+                  </h3>
+                  <h3 className="text-lg font-medium leading-snug text-black">
+                    Dla tych, którzy chcą utrwalić materiał jeszcze bardziej.
+                  </h3>
+             </div>
+
+             <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                  Klucz odpowiedzi
+                </h3>
+                <h3 className="text-lg font-medium leading-snug text-black">
+                  Żebyś mógł samodzielnie sprawdzić, czy dobrze ogarniasz.
+                </h3>
+             </div>
+          </div>
+    </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
         <p>&copy; 2025 English Dream - Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
