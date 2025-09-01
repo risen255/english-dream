@@ -11,6 +11,16 @@ const Courses = () => {
     setIsOpen(!isOpen);
    };
 
+  const scrollToSection = (event, id) => {
+     event.preventDefault();
+     const section = document.querySelector(id);
+     if (section) {
+       window.scrollTo({
+         top: section.offsetTop - 50,
+         behavior: "smooth"
+       });
+     }
+   };
 
   return (
     <div className="font-sans text-gray-900">

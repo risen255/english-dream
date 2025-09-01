@@ -1,4 +1,5 @@
 import { HashRouter , Routes, Route } from "react-router-dom";
+import ScrollToTop from "./utils/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import AboutMe from "./pages/AboutMe";
 import Offer from "./pages/Offer";
@@ -14,6 +15,7 @@ import FreeEbook5WaysWords from "./pages/FreeEbook5WaysWords";
 function App() {
   return (
     <HashRouter>
+       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/o-mnie" element={<AboutMe />} />
