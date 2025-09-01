@@ -11,16 +11,6 @@ const Contact = () => {
     setIsOpen(!isOpen);
    };
 
-  const scrollToSection = (event, id) => {
-     event.preventDefault();
-     const section = document.querySelector(id);
-     if (section) {
-       window.scrollTo({
-         top: section.offsetTop - 50,
-         behavior: "smooth"
-       });
-     }
-   };
 
   return (
     <div className="font-sans text-gray-900">
@@ -145,7 +135,7 @@ const Contact = () => {
              </div>
            </header>
 
-        <section id="kontakt" className="min-h-[120vh] flex flex-col justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 py-12 text-center animate-fadeIn">
+        <section id="kontakt" className="min-h-[120vh] flex flex-col justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 py-12 text-center animate-fadeIn mt-12">
           <h3 className="text-4xl font-extrabold text-gray-900 mb-8">Skontaktuj się ze mną</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl">
 
