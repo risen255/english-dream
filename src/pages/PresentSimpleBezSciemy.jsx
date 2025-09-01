@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding } from "react-icons/fa";
-import { FiPhone } from "react-icons/fi";
+import { FiPhone, FiVideo, FiBook, FiFileText, FiUser } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 import { ShoppingCartIcon, InformationCircleIcon, AcademicCapIcon  } from '@heroicons/react/24/solid';
 
@@ -141,18 +141,49 @@ const PresentSimpleBezSciemy = () => {
            id="present-simple-bez-sciemy"
            className="min-h-screen flex flex-col justify-start items-center bg-gradient-to-r from-blue-500 via-indigo-500 to-[#0C1C8C] text-white text-center px-6 py-12 pt-16"
          >
-            <div>
-                 Present simple bez ściemy
-                 Lekcje są krótkie, konkretne i treściwe. Możesz je oglądać o dowolnej
-                 porze i wracać do nich tyle razy, ile potrzebujesz. Uczysz się poprzez
-                 słuchanie, powtarzanie oraz rozwiązywanie zadań w specjalnie
-                 przygotowanym przeze mnie pliku PDF, który pomoże Ci utrwalić
-                 zdobytą wiedzę.
-                 Aby rozpocząć kurs, wystarczy, że znasz podstawowe zaimki osobowe
-                 – nie musisz obawiać się braków w słownictwie. Wszystko zostało
-                 wyjaśnione jasno, prosto i bez lania wody.
-          </div>
-     </section>
+           {/* Tytuł główny */}
+           <h1 className="text-4xl lg:text-5xl font-extrabold mb-4 mt-10">Present simple bez ściemy</h1>
+           {/* Podtytuł */}
+           <p className="text-lg lg:text-2xl mb-10 lg:mb-2 max-w-2xl">Praktyczny kurs – nauka, która działa w realnym życiu</p>
+
+           <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full lg:w-1/2">
+              <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-6 flex flex-col items-center justify-center text-center h-40 transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                <FiVideo className="text-4xl mb-3 text-blue-500" />
+                <h3 className="text-lg font-medium leading-snug text-black">
+                  60 minut nagrań z instruktażem
+                </h3>
+              </div>
+
+              <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-6 flex flex-col items-center justify-center text-center h-40 transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                <FiBook className="text-4xl mb-3 text-indigo-500" />
+                <h3 className="text-lg font-medium leading-snug text-black">
+                  10 lekcji z praktycznymi ćwiczeniami
+                </h3>
+              </div>
+
+              <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-6 flex flex-col items-center justify-center text-center h-40 transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                <FiFileText className="text-4xl mb-3 text-purple-600" />
+                <h3 className="text-lg font-medium leading-snug text-black">
+                  Ćwiczenia w formacie PDF
+                </h3>
+              </div>
+
+              <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-6 flex flex-col items-center justify-center text-center h-40 transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                <FiUser className="text-4xl mb-3 text-blue-500" />
+                <h3 className="text-lg font-medium leading-snug text-black">
+                  Słownictwo przygotowane przez native speaker'a
+                </h3>
+              </div>
+            </div>
+
+             {/* Obrazek */}
+             <img
+               src="/images/courses/present-simple-single.png"
+               className="w-160 h-auto"
+             />
+           </div>
+         </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
         <p>&copy; 2025 English Dream - Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
