@@ -134,8 +134,8 @@ const Opinions = () => {
              </div>
            </header>
 
-         <section id="opinie" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-green-500 via-teal-500 to-blue-500 text-white text-center px-6 py-12 mt-12">
-             <h2 className="text-4xl font-bold mb-6">Opinie</h2>
+         <section id="opinie" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-green-500 via-teal-500 to-blue-500 text-white text-center px-6 py-12">
+             <h2 className="text-4xl font-bold mb-6 pt-12">Opinie</h2>
              <p className="text-lg mt-4 max-w-2xl">Przeczytaj, co moi kursanci mówią o swoich doświadczeniach z nauką angielskiego we współpracy ze mną!</p>
              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 w-full max-w-6xl">
                {[{name: 'Ewa Dawidowicz', opinion: 'Polecamy z całego serca! Mega efekty! Syn z oceny dostatecznej podciągnięty na bardzo dobrą! Bardzo chętnie uczestniczy w zajęciach :-)', rating: 5},

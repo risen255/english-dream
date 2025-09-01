@@ -145,7 +145,7 @@ const AboutMe = () => {
              </div>
            </header>
 
-        <section id="omnie" className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 md:px-12 py-12 md:py-24 animate-shimmer text-center md:text-left mt-12">
+        <section id="omnie" className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 md:px-12 py-12 md:py-24 animate-shimmer text-center md:text-left">
             <img
               src="/images/me.jpg"
               alt="O mnie"
