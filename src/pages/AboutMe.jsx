@@ -2,13 +2,25 @@ import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
+import { ShoppingCartIcon, InformationCircleIcon, AcademicCapIcon  } from '@heroicons/react/24/solid';
 
-const ForDownload = () => {
+const AboutMe = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-     setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen);
+   };
+
+  const scrollToSection = (event, id) => {
+     event.preventDefault();
+     const section = document.querySelector(id);
+     if (section) {
+       window.scrollTo({
+         top: section.offsetTop - 50,
+         behavior: "smooth"
+       });
+     }
+   };
 
   return (
     <div className="font-sans text-gray-900">
@@ -43,29 +55,29 @@ const ForDownload = () => {
                  "Kontakt",
                ].map((text, index) => {
                  const links = {
-                    "English Dream": "/",
-                    "O mnie": "/#o-mnie",
-                    "Oferta": "/#oferta",
-                    "Kursy": "/#kursy",
-                    "Do pobrania": "/#do-pobrania",
-                    "Opinie": "/#opinie",
-                    "Cennik": "/#cennik",
-                    "Kontakt": "/#kontakt",
-                 };
+                       "English Dream": "/",
+                       "O mnie": "/#o-mnie",
+                       "Oferta": "/#oferta",
+                       "Kursy": "/#kursy",
+                       "Do pobrania": "/#do-pobrania",
+                       "Opinie": "/#opinie",
+                       "Cennik": "/#cennik",
+                       "Kontakt": "/#kontakt",
+                     };
 
                  const href = links[text] || "/";
 
                  return (
-                 <a
-                        key={index}
-                        href={href}
-                        onClick={(e) => {
-                          if (!isSubpage) closeMenu(e, text.toLowerCase().replace(/ /g, ""));
-                        }}
-                        className="block md:inline relative transition duration-300 group py-2 md:py-0"
-                   >
-                        {text}
-                        <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
+                  <a
+                       key={index}
+                       href={href}
+                       onClick={(e) => {
+                         if (!isSubpage) closeMenu(e, text.toLowerCase().replace(/ /g, ""));
+                       }}
+                       className="block md:inline relative transition duration-300 group py-2 md:py-0"
+                  >
+                       {text}
+                       <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
                  </a>
                  );
                })}
@@ -133,29 +145,35 @@ const ForDownload = () => {
              </div>
            </header>
 
-      <section id="dopobrania" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-orange-400 to-red-600 text-white text-center px-6 py-12 pt-24">
-         <h2 className="text-4xl font-bold mb-6">Do pobrania</h2>
-         <p className="text-lg mt-4 max-w-2xl">Zapoznaj się z darmowymi e-bookami!</p>
-
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-auto max-w-5xl justify-center mx-auto">
-           <div className="flex flex-col items-center">
-              <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
-                <img src="/images/free_ebook_irregular_verbs.jpg" className="w-full h-100 object-cover"/>
-              </div>
-             <a href="/#darmowy-ebook-czasowniki-nieregularne" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
-               Pobierz darmowego e-booka
-             </a>
+        <section id="omnie" className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-gray-200 via-gray-50 to-white px-6 md:px-12 py-12 md:py-24 animate-shimmer text-center md:text-left mt-12">
+            <img
+              src="/images/me.jpg"
+              alt="O mnie"
+              className="w-5/6 md:w-1/3 max-w-xl rounded-2xl shadow-2xl mb-6 md:mb-0 md:mr-12 transition-all duration-300 hover:scale-105"
+            />
+            <div className="w-full md:w-1/2 md:ml-12">
+              <h2 className="text-4xl font-bold text-gray-800">O mnie</h2>
+              <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
+                Cześć! Nazywam się Ewa i jestem pasjonatką języków oraz kreatywnego nauczania. Moja historia
+                zaczęła się w Białymstoku, ale będac małym dzieckiem, przeprowadziłam się do Wielkiej Brytanii. Tam
+                ukończyłam szkołę, a później studia magisterskie z architektury.
+              </p>
+              <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
+                Po powrocie do Polski w 2020 roku dzieliłam swój czas między pracę jako architekt, a nauczaniem
+                języka angielskiego. W końcu pasja do języków wygrała – w 2024 roku zaczęłam uczyć na pełen etat.
+              </p>
+              <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0">
+                W swojej pracy nauczania języka angielskiego kieruję się indywidualnym podejściem do każdego
+                ucznia. Skupiam się na jego specyficznych potrzebach i problemach, dostosowując metody nauki do
+                jego tempa oraz stylu przyswajania wiedzy. Tłumaczę zagadnienia w sposób prosty i zrozumiały,
+                tak by nauka była przyjemnością, a nie stresującym obowiązkiem. Kładę szczególny nacisk na
+                konwersacje, bo uważam, że to klucz do pewności siebie w mówieniu i swobodnej komunikacji.
+              </p>
+              <p className="text-lg mt-4 max-w-xl mx-auto md:mx-0 font-semibold">
+                Jeśli chcesz nauczyć się angielskiego w swobodnej i przyjaznej atmosferze, dobrze trafiłeś! 😊
+              </p>
             </div>
-            <div className="flex flex-col items-center">
-               <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
-                 <img src="/images/free_ebook_5wayswords.jpg" className="w-full h-100 object-cover"/>
-               </div>
-              <a href="/#darmowy-ebook-5-sposobow-na-nauke-angielskich-slowek" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
-                Pobierz darmowego e-booka
-              </a>
-             </div>
-         </div>
-     </section>
+        </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
         <p>&copy; 2025 English Dream - Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
@@ -164,4 +182,4 @@ const ForDownload = () => {
   );
 };
 
-export default ForDownload;
+export default AboutMe;

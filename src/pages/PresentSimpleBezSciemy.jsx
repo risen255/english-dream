@@ -54,23 +54,31 @@ const PresentSimpleBezSciemy = () => {
                  "Cennik",
                  "Kontakt",
                ].map((text, index) => {
-                 const id = text.toLowerCase().replace(/ /g, "");
+                 const links = {
+                       "English Dream": "/",
+                       "O mnie": "/#o-mnie",
+                       "Oferta": "/#oferta",
+                       "Kursy": "/#kursy",
+                       "Do pobrania": "/#do-pobrania",
+                       "Opinie": "/#opinie",
+                       "Cennik": "/#cennik",
+                       "Kontakt": "/#kontakt",
+                     };
 
-                  // sprawdzamy, czy to "Kursy" lub "Do pobrania"
-                 const specifiedPage = text === "Kursy" ? "/#kursy" : text === "Do pobrania" ? "/#do-pobrania" : "/";
+                 const href = links[text] || "/";
 
                  return (
-                  <a
-                      key={index}
-                      href={specifiedPage} // jeśli podstrona → /kursy lub /do-pobrania, w innym wypadku #id
-                      onClick={(e) => {
-                        if (!isSubpage) closeMenu(e, id); // zamykamy menu tylko dla sekcji onepage
-                      }}
-                      className="block md:inline relative transition duration-300 group py-2 md:py-0"
-                  >
-                      {text}
-                      <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
-                  </a>
+                   <a
+                         key={index}
+                         href={href}
+                         onClick={(e) => {
+                           if (!isSubpage) closeMenu(e, text.toLowerCase().replace(/ /g, ""));
+                         }}
+                         className="block md:inline relative transition duration-300 group py-2 md:py-0"
+                   >
+                         {text}
+                         <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
+                   </a>
                  );
                })}
              </nav>

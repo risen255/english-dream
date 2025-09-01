@@ -2,13 +2,15 @@ import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
+import { ShoppingCartIcon, InformationCircleIcon, AcademicCapIcon  } from '@heroicons/react/24/solid';
 
-const ForDownload = () => {
+const Offer = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-     setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen);
+   };
+
 
   return (
     <div className="font-sans text-gray-900">
@@ -43,29 +45,29 @@ const ForDownload = () => {
                  "Kontakt",
                ].map((text, index) => {
                  const links = {
-                    "English Dream": "/",
-                    "O mnie": "/#o-mnie",
-                    "Oferta": "/#oferta",
-                    "Kursy": "/#kursy",
-                    "Do pobrania": "/#do-pobrania",
-                    "Opinie": "/#opinie",
-                    "Cennik": "/#cennik",
-                    "Kontakt": "/#kontakt",
-                 };
+                       "English Dream": "/",
+                       "O mnie": "/#o-mnie",
+                       "Oferta": "/#oferta",
+                       "Kursy": "/#kursy",
+                       "Do pobrania": "/#do-pobrania",
+                       "Opinie": "/#opinie",
+                       "Cennik": "/#cennik",
+                       "Kontakt": "/#kontakt",
+                     };
 
                  const href = links[text] || "/";
 
                  return (
-                 <a
-                        key={index}
-                        href={href}
-                        onClick={(e) => {
-                          if (!isSubpage) closeMenu(e, text.toLowerCase().replace(/ /g, ""));
-                        }}
-                        className="block md:inline relative transition duration-300 group py-2 md:py-0"
-                   >
-                        {text}
-                        <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
+                  <a
+                       key={index}
+                       href={href}
+                       onClick={(e) => {
+                         if (!isSubpage) closeMenu(e, text.toLowerCase().replace(/ /g, ""));
+                       }}
+                       className="block md:inline relative transition duration-300 group py-2 md:py-0"
+                  >
+                       {text}
+                       <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
                  </a>
                  );
                })}
@@ -133,29 +135,36 @@ const ForDownload = () => {
              </div>
            </header>
 
-      <section id="dopobrania" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-orange-400 to-red-600 text-white text-center px-6 py-12 pt-24">
-         <h2 className="text-4xl font-bold mb-6">Do pobrania</h2>
-         <p className="text-lg mt-4 max-w-2xl">Zapoznaj się z darmowymi e-bookami!</p>
-
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-auto max-w-5xl justify-center mx-auto">
-           <div className="flex flex-col items-center">
-              <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
-                <img src="/images/free_ebook_irregular_verbs.jpg" className="w-full h-100 object-cover"/>
+         <section id="oferta" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white text-center px-6 py-12 mt-12">
+            <h2 className="text-4xl font-bold mb-6">Dlaczego warto uczyć się ze mną?</h2>
+            <div className="flex flex-col space-y-6 max-w-3xl w-full items-center">
+              <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-xl font-bold text-indigo-700">📝 Indywidualne podejście</h3>
+                <p className="text-gray-700 mt-2">Nauka z uwzględnieniem indywidualnych potrzeb i stylu uczenia się.</p>
               </div>
-             <a href="/#darmowy-ebook-czasowniki-nieregularne" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
-               Pobierz darmowego e-booka
-             </a>
+              <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-xl font-bold text-indigo-700">📈 Szybkie efekty</h3>
+                <p className="text-gray-700 mt-2">Dzięki sprawdzonym metodom nauki osiągniesz szybkie postępy w płynności językowej i zrozumieniu angielskiego.</p>
+              </div>
+              <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-xl font-bold text-indigo-700">🎓 Przygotowanie do egzaminów</h3>
+                <p className="text-gray-700 mt-2">Wspieram uczniów w zrozumieniu materiału szkolnego i przygotowaniu do egzaminu ósmoklasisty i matury.</p>
+              </div>
+              <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-xl font-bold text-indigo-700">💡 Ciekawe lekcje</h3>
+                <p className="text-gray-700 mt-2">Nowoczesne techniki, gry edukacyjne i scenariusze sytuacyjne, aby nauka była angażująca i skuteczna.</p>
+              </div>
+              <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-xl font-bold text-indigo-700">🗣️ Nacisk na mówienie</h3>
+                <p className="text-gray-700 mt-2">Przełamuje bariery językowe i zapewniam pełne wsparcie w nauce.</p>
+              </div>
+              <div className="w-full bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-xl font-bold text-indigo-700">🌍 Angielski w realnym świecie</h3>
+                <p className="text-gray-700 mt-2">Uczę praktycznych umiejętności językowych przydatnych w codziennym życiu.</p>
+              </div>
+              <a href="/#kontakt" className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Chcę uczyć się już od zaraz!</a>
             </div>
-            <div className="flex flex-col items-center">
-               <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
-                 <img src="/images/free_ebook_5wayswords.jpg" className="w-full h-100 object-cover"/>
-               </div>
-              <a href="/#darmowy-ebook-5-sposobow-na-nauke-angielskich-slowek" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
-                Pobierz darmowego e-booka
-              </a>
-             </div>
-         </div>
-     </section>
+          </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
         <p>&copy; 2025 English Dream - Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
@@ -164,4 +173,4 @@ const ForDownload = () => {
   );
 };
 
-export default ForDownload;
+export default Offer;

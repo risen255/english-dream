@@ -54,17 +54,25 @@ const Courses = () => {
                  "Cennik",
                  "Kontakt",
                ].map((text, index) => {
-                 const id = text.toLowerCase().replace(/ /g, "");
+                 const links = {
+                       "English Dream": "/",
+                       "O mnie": "/#o-mnie",
+                       "Oferta": "/#oferta",
+                       "Kursy": "/#kursy",
+                       "Do pobrania": "/#do-pobrania",
+                       "Opinie": "/#opinie",
+                       "Cennik": "/#cennik",
+                       "Kontakt": "/#kontakt",
+                     };
 
-                  // sprawdzamy, czy to "Kursy" lub "Do pobrania"
-                 const specifiedPage = text === "Kursy" ? "/#kursy" : text === "Do pobrania" ? "/#do-pobrania" : "/";
+                 const href = links[text] || "/";
 
                  return (
                   <a
                       key={index}
-                      href={specifiedPage} // jeśli podstrona → /kursy lub /do-pobrania, w innym wypadku #id
+                      href={href}
                       onClick={(e) => {
-                        if (!isSubpage) closeMenu(e, id); // zamykamy menu tylko dla sekcji onepage
+                        if (!isSubpage) closeMenu(e, text.toLowerCase().replace(/ /g, ""));
                       }}
                       className="block md:inline relative transition duration-300 group py-2 md:py-0"
                   >

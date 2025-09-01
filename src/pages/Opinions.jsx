@@ -2,13 +2,25 @@ import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
+import { ShoppingCartIcon, InformationCircleIcon, AcademicCapIcon  } from '@heroicons/react/24/solid';
 
-const ForDownload = () => {
+const Opinions = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-     setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen);
+   };
+
+  const scrollToSection = (event, id) => {
+     event.preventDefault();
+     const section = document.querySelector(id);
+     if (section) {
+       window.scrollTo({
+         top: section.offsetTop - 50,
+         behavior: "smooth"
+       });
+     }
+   };
 
   return (
     <div className="font-sans text-gray-900">
@@ -43,29 +55,29 @@ const ForDownload = () => {
                  "Kontakt",
                ].map((text, index) => {
                  const links = {
-                    "English Dream": "/",
-                    "O mnie": "/#o-mnie",
-                    "Oferta": "/#oferta",
-                    "Kursy": "/#kursy",
-                    "Do pobrania": "/#do-pobrania",
-                    "Opinie": "/#opinie",
-                    "Cennik": "/#cennik",
-                    "Kontakt": "/#kontakt",
-                 };
+                       "English Dream": "/",
+                       "O mnie": "/#o-mnie",
+                       "Oferta": "/#oferta",
+                       "Kursy": "/#kursy",
+                       "Do pobrania": "/#do-pobrania",
+                       "Opinie": "/#opinie",
+                       "Cennik": "/#cennik",
+                       "Kontakt": "/#kontakt",
+                     };
 
                  const href = links[text] || "/";
 
                  return (
-                 <a
-                        key={index}
-                        href={href}
-                        onClick={(e) => {
-                          if (!isSubpage) closeMenu(e, text.toLowerCase().replace(/ /g, ""));
-                        }}
-                        className="block md:inline relative transition duration-300 group py-2 md:py-0"
-                   >
-                        {text}
-                        <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
+                  <a
+                       key={index}
+                       href={href}
+                       onClick={(e) => {
+                         if (!isSubpage) closeMenu(e, text.toLowerCase().replace(/ /g, ""));
+                       }}
+                       className="block md:inline relative transition duration-300 group py-2 md:py-0"
+                  >
+                       {text}
+                       <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-yellow-300 transition-all duration-300 group-hover:w-full group-hover:-translate-x-1/2 group-hover:max-w-full"></span>
                  </a>
                  );
                })}
@@ -133,29 +145,28 @@ const ForDownload = () => {
              </div>
            </header>
 
-      <section id="dopobrania" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-orange-400 to-red-600 text-white text-center px-6 py-12 pt-24">
-         <h2 className="text-4xl font-bold mb-6">Do pobrania</h2>
-         <p className="text-lg mt-4 max-w-2xl">Zapoznaj się z darmowymi e-bookami!</p>
-
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-auto max-w-5xl justify-center mx-auto">
-           <div className="flex flex-col items-center">
-              <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
-                <img src="/images/free_ebook_irregular_verbs.jpg" className="w-full h-100 object-cover"/>
-              </div>
-             <a href="/#darmowy-ebook-czasowniki-nieregularne" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
-               Pobierz darmowego e-booka
-             </a>
-            </div>
-            <div className="flex flex-col items-center">
-               <div className="text-gray-900 rounded-2xl shadow-2xl text-center transition-all hover:scale-105 hover:shadow-3xl overflow-hidden w-full max-w-md">
-                 <img src="/images/free_ebook_5wayswords.jpg" className="w-full h-100 object-cover"/>
-               </div>
-              <a href="/#darmowy-ebook-5-sposobow-na-nauke-angielskich-slowek" className="mt-8 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
-                Pobierz darmowego e-booka
-              </a>
+         <section id="opinie" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-green-500 via-teal-500 to-blue-500 text-white text-center px-6 py-12 mt-12">
+             <h2 className="text-4xl font-bold mb-6">Opinie</h2>
+             <p className="text-lg mt-4 max-w-2xl">Przeczytaj, co moi kursanci mówią o swoich doświadczeniach z nauką angielskiego we współpracy ze mną!</p>
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 w-full max-w-6xl">
+               {[{name: 'Ewa Dawidowicz', opinion: 'Polecamy z całego serca! Mega efekty! Syn z oceny dostatecznej podciągnięty na bardzo dobrą! Bardzo chętnie uczestniczy w zajęciach :-)', rating: 5},
+                 {name: 'Paula Kazimierczak', opinion: 'Bardzo polecam zajęcia z Ewą, wprowadza przyjemną atmosferę i nie czujesz się oceniany ☺️ Ma cierpliwość anielską i wszystko tłumaczy aż do zrozumienia ☺️ Bardzo polecam !', rating: 5},
+                 {name: 'Hania Burzyńska', opinion: 'Widzę u siebie ogromne postępy, jestem bardzo zadowolona z zajęć, które zawsze są w przyjemnej atmosferze. Bardzo polecam!', rating: 5},
+                 {name: 'Kamila Kropiwnicka', opinion: 'Jesteśmy bardzo zadowoleni z zajęć na które uczęszcza nasz syn. Widać ogromne postępy w nauce. Syn również uważa że zajęcia są bardzo ciekawe i przynoszą mu wiele korzyści. Polecam 😊', rating: 5},
+                 {name: 'KTS Kluczyk', opinion: 'Syn uczęszcza do Pani Ewy na lekcje j. angielskiego. Widać Jej zaangażowanie oraz wiedzę. Polecam!', rating: 5},
+                 {name: 'Marta Kow-cka', opinion: 'Polecam z całego serca ❤️ córka bardzo chętnie uczęszcza na zajęcia. Lekcje prowadzone w swobodnej atmosferze, bardzo ciekawie prowadzone. Nacisk położono na komunikacje.', rating: 5}]
+                 .map((review, index) => (
+                 <div key={index} className="bg-white text-gray-900 p-6 rounded-xl shadow-lg text-center transition-all hover:scale-105 hover:shadow-2xl">
+                   <h3 className="text-xl font-bold text-indigo-700">{review.name}</h3>
+                   <p className="text-gray-700 mt-2">"{review.opinion}"</p>
+                   <div className="flex justify-center mt-2 text-yellow-400">
+                     {'★'.repeat(review.rating)}
+                   </div>
+                 </div>
+               ))}
              </div>
-         </div>
-     </section>
+             <a href="/#kontakt" className="mt-6 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5">Ja też chcę polepszyć swój angielski!</a>
+       </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
         <p>&copy; 2025 English Dream - Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
@@ -164,4 +175,4 @@ const ForDownload = () => {
   );
 };
 
-export default ForDownload;
+export default Opinions;
