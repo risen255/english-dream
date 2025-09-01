@@ -273,18 +273,20 @@ const PresentSimpleBezSciemy = () => {
       >
           <h2 className="text-4xl lg:text-5xl font-bold mb-10 lg:mb-10 tracking-wide text-center lg:text-left">Świetny dodatek dla ambitnych!</h2>
 
-          <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
-            {/* Obrazek */}
-            <img
-              src="/images/courses/present-simple-power-pack.png"
-              className="w-160 h-auto transform scale-180 lg:scale-140"
-              alt="Ćwiczeniowy Power Pack"
-            />
+         <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8 mt-8">
+           {/* Kontener obrazka */}
+           <div className="relative w-full max-w-md overflow-hidden">
+             <img
+               src="/images/courses/present-simple-power-pack.png"
+               className="w-full h-auto transform scale-180 lg:scale-180 transition-transform duration-500"
+               alt="Ćwiczeniowy Power Pack"
+             />
+           </div>
 
             {/* Tekst po prawej stronie */}
             <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
               <div className="space-y-4 text-lg lg:text-xl mt-6">
-                <h2 className="text-3xl font-semibold">Ćwiczeniowy Power Pack</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-center sm:text-left">Ćwiczeniowy Power Pack</h2>
                 <p className="text-base lg:text-lg">
                   Masz ochotę naprawdę przetestować swoją wiedzę i wejść na wyższy
                   poziom? Ten zestaw został stworzony z myślą o osobach, które nie
