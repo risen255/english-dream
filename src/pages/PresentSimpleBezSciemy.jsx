@@ -313,6 +313,128 @@ const PresentSimpleBezSciemy = () => {
           </div>
       </section>
 
+      <section
+         id="present-simple-bez-sciemy-with-package-cheaper"
+         className="min-h-screen flex flex-col justify-start items-center bg-gradient-to-r from-[#0C1C8C] via-[#1A2A6C] to-[#6A0DAD] text-white text-center px-6 py-12 pt-16"
+       >
+         <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
+           {/* Obrazek */}
+           <img
+             src="/images/courses/present-simple-3-in-1.png"
+             className="w-160 h-auto"
+           />
+
+           {/* Tekst po prawej stronie */}
+           <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
+             <h2 className="text-4xl lg:text-5xl font-bold mb-6 tracking-wide text-center lg:text-left">
+               W pakiecie taniej!
+             </h2>
+
+             <div className="space-y-4 text-lg lg:text-xl">
+               <p className="leading-relaxed">
+                 Fantastyczny kurs{" "}
+                 <span className="font-bold">Present simple bez ściemy</span> i{" "}
+                 <span className="font-bold">Ćwiczeniowy Power Pack</span> do
+                 utrwalenia wiedzy w atrakcyjnej cenie!
+               </p>
+             </div>
+
+             {/* Div z ceną */}
+             <div className="mt-6 text-left space-y-2 text-lg lg:text-xl">
+               <p class="text-sm">Cena regularna: <span className="line-through">198.60 PLN</span></p>
+               <p>Aktualna cena: <span className="font-bold text-yellow-400">64 PLN</span></p>
+               <p class="text-sm">Najniższa cena w ciągu ostatnich 30 dni: 64 PLN</p>
+             </div>
+
+             {/* Przyciski pod ceną */}
+             <div className="flex flex-col gap-2 mt-6 items-center lg:items-start">
+               {/* Przycisk Kup kurs teraz */}
+               <a
+                 href="https://englishdream.systeme.io/pakietpresentsimple"
+                 className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
+               >
+                 <ShoppingCartIcon className="w-5 h-5" />
+                 Kup teraz
+               </a>
+             </div>
+           </div>
+         </div>
+       </section>
+
+       <section
+             id="present-simple-bez-sciemy-most-often-questions"
+             className="min-h-screen flex flex-col justify-start items-center bg-gradient-to-r from-orange-400 to-red-600 text-white text-center px-6 py-12 pt-16"
+       >
+              <h2 className="text-4xl lg:text-5xl font-bold mb-10 lg:mb-10 tracking-wide text-center lg:text-left">Najczęściej zadawane pytania</h2>
+
+              <div className="flex flex-col items-center justify-center max-w-4xl mx-auto gap-6">
+                <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                  <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                    Dla kogo jest ten kurs?
+                  </h3>
+                  <h3 className="text-lg font-medium leading-snug text-black">
+                    Ten kurs jest dla osób, które chcą ogarnąć Present Simple szybko i po ludzku – bez nudnych regułek.
+                    Jeśli dopiero zaczynasz albo znasz podstawy, ale ciągle się mylisz, tu nauczysz się mówić tak, jak
+                    naprawdę używa się angielskiego na co dzień, na prostych przykładach z życia.
+                  </h3>
+                </div>
+
+                <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                  <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                    Co muszę wiedzieć, aby przejść ten kurs?
+                  </h3>
+                  <h3 className="text-lg font-medium leading-snug text-black">
+                    Aby przejść ten kurs, wystarczy podstawowa znajomość zaimków osobowych – a jeśli ich nie
+                    pamiętasz, spokojnie, przerobimy to razem. Nie musisz znać dużo słówek – uczymy się ich przy okazji,
+                    używając praktycznego, codziennego słownictwa do tłumaczenia gramatyki.
+                  </h3>
+                </div>
+
+                <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                   <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                     Czy jeśli mam już podstawy angielskiego, to ten kurs jest dla mnie?
+                   </h3>
+                   <h3 className="text-lg font-medium leading-snug text-black">
+                     Jeśli masz już podstawy, ten kurs nadal może być dla Ciebie – zaczynamy od zera, ale w szybkim,
+                     konkretnym tempie. To świetna opcja, jeśli chcesz odświeżyć wiedzę, poukładać zasady i
+                     przygotować się np. do egzaminu.
+                   </h3>
+                </div>
+
+                <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                    <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                      Jak długo będę mieć dostęp do kursu?
+                    </h3>
+                    <h3 className="text-lg font-medium leading-snug text-black">
+                      Nie ma limitu – dostęp do kursu otrzymujesz od razu po opłaceniu i możesz korzystać z niego bez
+                      ograniczeń. Ucz się kiedy chcesz i ile chcesz.
+                    </h3>
+                </div>
+
+                <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                     <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                       Co wyróżnia ten kurs?
+                     </h3>
+                     <h3 className="text-lg font-medium leading-snug text-black">
+                       Ten kurs wyróżnia przede wszystkim praktyczne podejście do nauki. Nie uczę „szkolnymi regułkami”
+                       ani suchą teorią – wszystko tłumaczę w prosty, zrozumiały sposób, tak jak naprawdę używa się
+                       Present Simple w codziennych rozmowach. Zamiast uczyć się na pamięć, pokazuję przykłady z życia,
+                       które pozwalają od razu zastosować wiedzę w praktyce. Dzięki temu uczysz się tak, jak rozumie i
+                       mówi native speaker, a nauka staje się naturalna i przyjemna.
+                     </h3>
+                </div>
+
+                <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
+                   <h3 className="text-2xl font-bold leading-snug text-black mb-2">
+                    Jakie są dostępne formy płatności?
+                   </h3>
+                   <h3 className="text-lg font-medium leading-snug text-black">
+                     Dostępne formy płatności to: BLIK, ApplePay, GooglePay, Karta płatnicza, Przelewy24
+                   </h3>
+                </div>
+             </div>
+       </section>
+
       <footer className="text-center p-6 bg-gray-900 text-white">
         <p>&copy; 2025 English Dream - Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
       </footer>
