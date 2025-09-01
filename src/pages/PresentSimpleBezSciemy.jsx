@@ -267,6 +267,50 @@ const PresentSimpleBezSciemy = () => {
           </div>
     </section>
 
+      <section
+              id="present-simple-bez-sciemy-for-ambitious"
+              className="min-h-screen flex flex-col justify-start items-center bg-gradient-to-r from-green-500 via-teal-500 to-blue-500 text-white text-center px-6 py-12 pt-16"
+      >
+          <h2 className="text-4xl lg:text-5xl font-bold mb-10 lg:mb-10 tracking-wide text-center lg:text-left">Świetny dodatek dla ambitnych!</h2>
+
+          <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
+            {/* Obrazek */}
+            <img
+              src="/images/courses/present-simple-power-pack.png"
+              className="w-160 h-auto transform scale-180 lg:scale-140"
+              alt="Ćwiczeniowy Power Pack"
+            />
+
+            {/* Tekst po prawej stronie */}
+            <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
+              <div className="space-y-4 text-lg lg:text-xl mt-6">
+                <h2 className="text-3xl font-semibold">Ćwiczeniowy Power Pack</h2>
+                <p className="text-base lg:text-lg">
+                  Masz ochotę naprawdę przetestować swoją wiedzę i wejść na wyższy
+                  poziom? Ten zestaw został stworzony z myślą o osobach, które nie
+                  chcą zatrzymać się na podstawach i lubią wyciskać z nauki maksimum.
+                  W środku znajdziesz:
+                  <br/><br/>
+                  <strong>Podsumowanie najważniejszych zasad Present Simple</strong> – szybko
+                  odświeżysz teorię, gdy tego potrzebujesz.
+                  <br/>
+                  <strong>Ponad 100 różnorodnych ćwiczeń</strong> – od prostych po wymagające, byś
+                  mógł stopniowo budować pewność w używaniu języka.
+                  <br/>
+                  <strong>Zdania do tłumaczenia</strong> – świetny sprawdzian Twoich umiejętności w
+                  praktyce.
+                  <br/>
+                  <strong>Klucz odpowiedzi</strong> – zawsze wiesz, czy idziesz w dobrym kierunku.
+                  <br/><br/>
+                  To nie jest kolejna nudna gramatyka – to praktyczny, intensywny
+                  trening, który pozwala Ci mówić i pisać po angielsku pewniej, szybciej i
+                  naturalniej.
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+
       <footer className="text-center p-6 bg-gray-900 text-white">
         <p>&copy; 2025 English Dream - Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
       </footer>
