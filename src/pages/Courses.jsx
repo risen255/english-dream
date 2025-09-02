@@ -190,7 +190,7 @@ const Courses = () => {
                  </a>
 
                  {/* Przycisk Kup kurs teraz */}
-                 <a
+                 <a id="present-simple-whole-package-buy-button"
                    href="https://englishdream.systeme.io/pakietpresentsimple"
                    className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
                  >
@@ -252,7 +252,7 @@ const Courses = () => {
                   </a>
 
                   {/* Przycisk Kup kurs teraz */}
-                  <a
+                  <a id="present-simple-single-buy-button"
                     href="https://englishdream.systeme.io/presentsimple"
                     className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
                   >
