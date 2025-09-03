@@ -180,7 +180,7 @@ const HomePage = () => {
              {/* Mobile: ikony + hamburger */}
              <div className="flex justify-end items-center px-4 md:hidden space-x-3">
                <a
-                 href="https://www.tiktok.com/@EnglishDreamXo"
+                 href="https://www.tiktok.com/@englishdreamxo"
                  target="_blank"
                  rel="noopener noreferrer"
                >
@@ -212,7 +212,7 @@ const HomePage = () => {
              {/* Desktop: ikony po prawej stronie */}
              <div className="hidden md:flex items-center space-x-4 absolute right-6 top-1/2 transform -translate-y-1/2 z-50">
                <a
-                 href="https://www.tiktok.com/@EnglishDreamXo"
+                 href="https://www.tiktok.com/@englishdreamxo"
                  target="_blank"
                  rel="noopener noreferrer"
                >
@@ -479,7 +479,7 @@ const HomePage = () => {
         
         <div className="flex items-center space-x-4 bg-white p-4 rounded-2xl shadow-lg transform hover:scale-105 transition duration-300">
           <FaTiktok className="text-black text-3xl" />
-          <a href="https://www.tiktok.com/@EnglishDreamXo" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-800 font-medium hover:text-black">@EnglishDreamXo</a>
+          <a href="https://www.tiktok.com/@englishdreamxo" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-800 font-medium hover:text-black">@EnglishDreamXo</a>
         </div>
       </div>
 
