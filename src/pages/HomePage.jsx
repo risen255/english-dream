@@ -99,35 +99,9 @@ const HomePage = () => {
 
   return (
     <div className="font-sans text-gray-900">
-        {/* Pasek promocyjny */}
-        <motion.a
-          id="present-simple-promotion-button"
-          href="/#kursy"
-          className="block w-full bg-yellow-400 text-gray-900 text-center py-2 font-bold text-lg fixed top-0 z-[60]"
-          animate={{
-            scale: [1, 1.03, 1],       // delikatne powiększanie
-            backgroundColor: [
-              "#facc15", "#fde047", "#facc15"
-            ],                         // pulsowanie koloru
-          }}
-          transition={{
-            duration: 1.2,
-            repeat: Infinity,
-          }}
-        >
-           {/* Tekst dla mobile */}
-             <span className="block md:hidden">
-               🎉 Kurs online taniej o <span className="text-red-600">72%</span> 🎉! <span className="text-blue-700 underline">Kliknij tutaj</span>
-             </span>
-
-             {/* Tekst dla desktop */}
-             <span className="hidden md:block">
-               🎉 Promocja! Już teraz kurs online present simple bez ściemy taniej o <span className="text-red-600">72%</span> 🎉! <span className="text-blue-700 underline">Kliknij tutaj</span>
-             </span>
-        </motion.a>
        <header
              /* top-18 md:top-10 zmienić na top-0 gdy pasek promocyjny zniknie*/
-             className="fixed top-10 md:top-10 w-full p-4 z-50 shadow-xl backdrop-blur-md transition-all duration-[700ms]"
+             className="fixed top-0 w-full p-4 z-50 shadow-xl backdrop-blur-md transition-all duration-[700ms]"
              style={{ backgroundColor: `rgba(12, 28, 140, ${bgOpacity})` }}
            >
              {/* Logo */}
