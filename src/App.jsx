@@ -8,6 +8,7 @@ import Opinions from "./pages/Opinions";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import PresentSimpleBezSciemy from "./pages/PresentSimpleBezSciemy";
+import Zajecia1Do1 from "./pages/Zajecia1Do1";
 import ForDownload from "./pages/ForDownload";
 import FreeEbookIrregularVerbs from "./pages/FreeEbookIrregularVerbs";
 import FreeEbook5WaysWords from "./pages/FreeEbook5WaysWords";
@@ -27,6 +28,7 @@ function App() {
         <Route path="/kontakt" element={<Contact />} />
 
         <Route path="/present-simple-bez-sciemy" element={<PresentSimpleBezSciemy />} />
+        <Route path="/zajecia-1-do-1" element={<Zajecia1Do1 />} />
 
         <Route path="/darmowy-ebook-czasowniki-nieregularne" element={<FreeEbookIrregularVerbs />} />
         <Route path="/darmowy-ebook-5-sposobow-na-nauke-angielskich-slowek" element={<FreeEbook5WaysWords />} />

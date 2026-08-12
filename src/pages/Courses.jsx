@@ -159,44 +159,14 @@ const Courses = () => {
              {/* Tekst po prawej stronie */}
              <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
                <h2 className="text-4xl lg:text-5xl font-bold mb-6 tracking-wide text-center lg:text-left">
-                 W pakiecie taniej!
+                 Zacznij swobodnie mówić po angielsku
                </h2>
 
                <div className="space-y-4 text-lg lg:text-xl">
                  <p className="leading-relaxed">
-                   Fantastyczny kurs{" "}
-                   <span className="font-bold">Present simple bez ściemy</span> i{" "}
-                   <span className="font-bold">Ćwiczeniowy Power Pack</span> do
-                   utrwalenia wiedzy w atrakcyjnej cenie!
+                   Ty wybierasz formę nauki 1:1, w parach, lub w grupie. My układamy plan, który działa.
+                   Zaczynasz mówić po angielsku naturalnie, od pierwszej lekcji.
                  </p>
-               </div>
-
-               {/* Div z ceną */}
-               <div className="mt-6 text-left space-y-2 text-lg lg:text-xl">
-                 <p class="text-sm">Cena regularna: <span className="line-through">198.60 PLN</span></p>
-                 <p>Aktualna cena: <span className="font-bold text-yellow-400">64 PLN</span></p>
-                 <p class="text-sm">Najniższa cena w ciągu ostatnich 30 dni: 64 PLN</p>
-               </div>
-
-               {/* Przyciski pod ceną */}
-               <div className="flex flex-col gap-2 mt-6 items-center lg:items-start">
-                 {/* Przycisk Dowiedz się więcej */}
-                 <a id="present-simple-more-info-first-button"
-                   href="/#present-simple-bez-sciemy"
-                   className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
-                 >
-                   <InformationCircleIcon className="w-5 h-5" />
-                   Dowiedz się więcej
-                 </a>
-
-                 {/* Przycisk Kup kurs teraz */}
-                 <a id="present-simple-whole-package-buy-button"
-                   href="https://englishdream.systeme.io/pakietpresentsimple"
-                   className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
-                 >
-                   <ShoppingCartIcon className="w-5 h-5" />
-                   Kup teraz
-                 </a>
                </div>
              </div>
            </div>
@@ -207,7 +177,7 @@ const Courses = () => {
                 onClick={(e) => scrollToSection(e, "#listakursow")}
               >
                 <AcademicCapIcon className="w-5 h-5" />
-                Poznaj też inne kursy
+                Poznaj nasze kursy
              </a>
           </div>
          </section>
@@ -226,17 +196,14 @@ const Courses = () => {
               {/* Tekst po prawej stronie */}
               <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
                 <h2 className="text-4xl lg:text-5xl font-bold mb-6 tracking-wide text-center lg:text-left">
-                  Present simple bez ściemy
+                  Zajęcia 1:1
                 </h2>
 
                 <div className="space-y-4 text-lg lg:text-xl">
                   <p className="text-lg">
-                    Praktyczny kurs - nauka która działa w realnym życiu
-                    To kurs wideo czasu present simple, stworzony specjalnie dla osób,
-                    które mają dość skomplikowanych regułek i sztywnej gramatyki. Ten
-                    kurs pokaże Ci, że czas Present Simple to nic trudnego. Uczę go tak,
-                    jak naprawdę używa się go na co dzień – naturalnie, tak jak mówią
-                    native speakerzy (i ja sama!).
+                    Indywidualne zajęcia z języka angielskiego dopasowane do Twojego poziomu, celów i potrzeb.
+                    Skupiamy się na praktycznej komunikacji i rozwijaniu umiejętności,
+                    które naprawdę przydadzą Ci się w codziennych sytuacjach, pracy lub podróży.
                   </p>
                 </div>
 
@@ -244,7 +211,7 @@ const Courses = () => {
                 <div className="flex flex-col gap-2 mt-6 items-center lg:items-start">
                   {/* Przycisk Dowiedz się więcej */}
                   <a id="present-simple-more-info-second-button"
-                    href="/#present-simple-bez-sciemy"
+                    href="/#zajecia-1-do-1"
                     className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
                   >
                     <InformationCircleIcon className="w-5 h-5" />
@@ -253,11 +220,138 @@ const Courses = () => {
 
                   {/* Przycisk Kup kurs teraz */}
                   <a id="present-simple-single-buy-button"
-                    href="https://englishdream.systeme.io/presentsimple"
+                    href="/#kontakt"
                     className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
                   >
-                    <ShoppingCartIcon className="w-5 h-5" />
-                    Kup teraz
+                    Zapisz się teraz
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
+              {/* Obrazek */}
+              <img
+                src="/images/courses/present-simple-single.png"
+                className="w-160 h-auto"
+              />
+
+              {/* Tekst po prawej stronie */}
+              <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
+                <h2 className="text-4xl lg:text-5xl font-bold mb-6 tracking-wide text-center lg:text-left">
+                  Zajęcia w parach
+                </h2>
+
+                <div className="space-y-4 text-lg lg:text-xl">
+                  <p className="text-lg">
+                    Zajęcia dla dwóch osób na podobnym poziomie, które chcą wspólnie rozwijać swój angielski.
+                    Dużo praktycznej komunikacji, ćwiczeń w parze i nauki dopasowanej do Waszych celów oraz potrzeb.
+                  </p>
+                </div>
+
+                {/* Przyciski pod ceną */}
+                <div className="flex flex-col gap-2 mt-6 items-center lg:items-start">
+                  {/* Przycisk Dowiedz się więcej */}
+                  <a id="present-simple-more-info-second-button"
+                    href="/#zajecia-w-parach"
+                    className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
+                  >
+                    <InformationCircleIcon className="w-5 h-5" />
+                    Dowiedz się więcej
+                  </a>
+
+                  {/* Przycisk Kup kurs teraz */}
+                  <a id="present-simple-single-buy-button"
+                    href="/#kontakt"
+                    className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
+                  >
+                    Zapisz się teraz
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+             <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
+              {/* Obrazek */}
+              <img
+                src="/images/courses/present-simple-single.png"
+                className="w-160 h-auto"
+              />
+
+              {/* Tekst po prawej stronie */}
+              <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
+                <h2 className="text-4xl lg:text-5xl font-bold mb-6 tracking-wide text-center lg:text-left">
+                  Kurs grupowy od zera dla dorosłych
+                </h2>
+
+                <div className="space-y-4 text-lg lg:text-xl">
+                  <p className="text-lg">
+                  Kurs dla dorosłych, którzy zaczynają naukę języka angielskiego od zera.
+                  W przyjaznej atmosferze krok po kroku poznasz podstawy języka i nauczysz się swobodnie radzić sobie w prostych, codziennych sytuacjach.
+                  </p>
+                </div>
+
+                {/* Przyciski pod ceną */}
+                <div className="flex flex-col gap-2 mt-6 items-center lg:items-start">
+                  {/* Przycisk Dowiedz się więcej */}
+                  <a id="present-simple-more-info-second-button"
+                    href="/#kurs-grupowy-od-zera-dla-doroslych"
+                    className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
+                  >
+                    <InformationCircleIcon className="w-5 h-5" />
+                    Dowiedz się więcej
+                  </a>
+
+                  {/* Przycisk Kup kurs teraz */}
+                  <a id="present-simple-single-buy-button"
+                    href="/#kontakt"
+                    className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
+                  >
+                    Zapisz się teraz
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
+              {/* Obrazek */}
+              <img
+                src="/images/courses/present-simple-single.png"
+                className="w-160 h-auto"
+              />
+
+              {/* Tekst po prawej stronie */}
+              <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
+                <h2 className="text-4xl lg:text-5xl font-bold mb-6 tracking-wide text-center lg:text-left">
+                  Kurs grupowy ósmoklasisty
+                </h2>
+
+                <div className="space-y-4 text-lg lg:text-xl">
+                  <p className="text-lg">
+                  Kurs przygotowujący uczniów do egzaminu ósmoklasisty z języka angielskiego.
+                  Skupiamy się na najważniejszych zagadnieniach egzaminacyjnych, rozwijaniu wszystkich kluczowych umiejętności
+                  oraz skutecznych sposobach radzenia sobie z zadaniami egzaminacyjnymi.
+                  </p>
+                </div>
+
+                {/* Przyciski pod ceną */}
+                <div className="flex flex-col gap-2 mt-6 items-center lg:items-start">
+                  {/* Przycisk Dowiedz się więcej */}
+                  <a id="present-simple-more-info-second-button"
+                    href="/#kurs-grupowy-osmoklasisty"
+                    className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
+                  >
+                    <InformationCircleIcon className="w-5 h-5" />
+                    Dowiedz się więcej
+                  </a>
+
+                  {/* Przycisk Kup kurs teraz */}
+                  <a id="present-simple-single-buy-button"
+                    href="/#kontakt"
+                    className="bg-yellow-400 text-gray-900 w-58 py-3 px-6 rounded-full shadow-lg font-semibold hover:bg-yellow-300 transition duration-300 transform hover:scale-105 hover:translate-y-0.5 flex items-center justify-center gap-2"
+                  >
+                    Zapisz się teraz
                   </a>
                 </div>
               </div>
