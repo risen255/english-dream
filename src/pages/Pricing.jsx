@@ -165,15 +165,19 @@ const AboutMe = () => {
                   </ul>
                 </div>
 
-                <a href="/#kontakt" className="mt-10 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
+                <a href="#/zajecia-1-do-1" className="mt-10 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
+                 Dowiędz się więcej
+                </a>
+
+                <a href="/#kontakt" className="mt-4 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
                  Umów lekcję próbną
                 </a>
               </div>
 
               <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl text-center border border-blue-500 transition-all hover:scale-110 hover:shadow-3xl flex flex-col justify-between">
                <div>
-                 <h3 className="text-2xl font-bold text-gray-800">Nauka Stacjonarna</h3>
-                 <p className="text-4xl font-bold text-blue-600 mt-2">120 zł</p>
+                 <h3 className="text-2xl font-bold text-gray-800">Zajęcia w parach</h3>
+                 <p className="text-4xl font-bold text-blue-600 mt-2">60 zł / os</p>
                  <p className="text-sm text-gray-600 mt-2">Długość zajęć 50 min</p>
 
                  <ul className="mt-6 space-y-3 text-left text-gray-700">
@@ -196,14 +200,20 @@ const AboutMe = () => {
                  </ul>
                </div>
 
-               <a href="/#kontakt" className="mt-10 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">Wybierz</a>
+              <a href="#/zajecia-w-parach" className="mt-10 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
+                Dowiędz się więcej
+              </a>
+
+               <a href="/#kontakt" className="mt-4 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
+                 Umów lekcję próbną
+               </a>
              </div>
 
               <div className="bg-white text-gray-900 p-8 rounded-2xl shadow-2xl text-center border border-gray-200 transition-all hover:scale-105 hover:shadow-3xl flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-800">Dojazd do Klienta</h3>
-                  <p className="text-4xl font-bold text-blue-600 mt-2">140 zł</p>
-                  <p className="text-sm text-gray-600 mt-2">Długość zajęć 50 min</p>
+                  <h3 className="text-2xl font-bold text-gray-800">Zajęcia grupowe</h3>
+                  <p className="text-4xl font-bold text-blue-600 mt-2">Od 40 zł</p>
+                  <p className="text-sm text-gray-600 mt-2">Długość zajęć 60 min</p>
 
                   <ul className="mt-6 space-y-3 text-left text-gray-700">
                     <li className="flex items-center gap-2">
@@ -225,7 +235,13 @@ const AboutMe = () => {
                   </ul>
                 </div>
 
-                <a href="/#kontakt" className="mt-10 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">Wybierz</a>
+               <a href="/#kursy" className="mt-10 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
+                  Dowiędz się więcej
+               </a>
+
+                <a href="/#kontakt" className="mt-4 inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
+                  Zapisz się
+                </a>
               </div>
             </div>
         </section>
