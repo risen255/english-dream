@@ -181,22 +181,22 @@ const AboutMe = () => {
                  <p className="text-sm text-gray-600 mt-2">Długość zajęć 50 min</p>
 
                  <ul className="mt-6 space-y-3 text-left text-gray-700">
-                     <li className="flex items-center gap-2">
-                       <Users className="w-5 h-5 text-blue-500" />
-                       Kameralne grupy do 6 osób
-                     </li>
-                     <li className="flex items-center gap-2">
-                       <BookOpen className="w-5 h-5 text-blue-500" />
-                       Materiały w cenie
-                     </li>
-                     <li className="flex items-center gap-2">
-                       <Handshake className="w-5 h-5 text-blue-500" />
-                       Wymiana doświadczeń z innymi uczestnikami
-                     </li>
-                     <li className="flex items-center gap-2">
-                       <Target className="w-5 h-5 text-blue-500" />
-                       Zajęcia dostosowane do poziomu grupy
-                     </li>
+                    <li className="flex items-center gap-2">
+                      <Users className="w-5 h-5 text-blue-500" />
+                      Nauka z partnerem/partnerką
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <BookOpen className="w-5 h-5 text-blue-500" />
+                      Materiały w cenie
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Flame className="w-5 h-5 text-blue-500" />
+                      Wspólna motywacja do nauki
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Target className="w-5 h-5 text-blue-500" />
+                      Zajęcia dostosowane do poziomu obu osób
+                    </li>
                  </ul>
                </div>
 
@@ -216,22 +216,22 @@ const AboutMe = () => {
                   <p className="text-sm text-gray-600 mt-2">Długość zajęć 60 min</p>
 
                   <ul className="mt-6 space-y-3 text-left text-gray-700">
-                    <li className="flex items-center gap-2">
-                      <Home className="w-5 h-5 text-blue-500" />
-                      Lekcje w Twoim domu
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <BookOpen className="w-5 h-5 text-blue-500" />
-                      Materiały drukowane
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <User className="w-5 h-5 text-blue-500" />
-                      Indywidualne podejście
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Sofa className="w-5 h-5 text-blue-500" />
-                      Nauka w zaciszu własnego domu
-                    </li>
+                      <li className="flex items-center gap-2">
+                        <Users className="w-5 h-5 text-blue-500" />
+                        Kameralne grupy do 6 osób
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <BookOpen className="w-5 h-5 text-blue-500" />
+                        Materiały w cenie
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Handshake className="w-5 h-5 text-blue-500" />
+                        Wymiana doświadczeń z innymi uczestnikami
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Target className="w-5 h-5 text-blue-500" />
+                        Zajęcia dostosowane do poziomu grupy
+                      </li>
                   </ul>
                 </div>
 
