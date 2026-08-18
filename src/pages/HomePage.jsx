@@ -354,7 +354,7 @@ const HomePage = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <Clock className="w-5 h-5 text-blue-500" />
-                  Elastyczne terminy zajęć
+                  Terminy zajęć dostosowane do Twojego grafiku
                 </li>
               </ul>
             </div>
@@ -420,7 +420,7 @@ const HomePage = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <Handshake className="w-5 h-5 text-blue-500" />
-                  Wymiana doświadczeń z innymi uczestnikami
+                  Wymiana doświadczeń
                 </li>
                 <li className="flex items-center gap-2">
                   <Target className="w-5 h-5 text-blue-500" />
