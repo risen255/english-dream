@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding, FaFacebookF } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { ShoppingCartIcon, InformationCircleIcon, AcademicCapIcon  } from '@heroicons/react/24/solid';
-import { CheckCircle, Laptop, BookOpen, User, Home, Globe, Sofa } from "lucide-react";
+import { CheckCircle, Laptop, BookOpen, Clock, Target, User, Users, Home, Globe, Sofa, Flame, Handshake } from "lucide-react";
 
 const AboutMe = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -146,22 +146,22 @@ const AboutMe = () => {
                   <p className="text-sm text-gray-600 mt-2">Długość zajęć 50 min</p>
 
                   <ul className="mt-6 space-y-3 text-left text-gray-700">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-blue-500" />
-                      Lekcje 1 na 1
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Laptop className="w-5 h-5 text-blue-500" />
-                      Interaktywne materiały
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <User className="w-5 h-5 text-blue-500" />
-                      Indywidualne podejście
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Globe className="w-5 h-5 text-blue-500" />
-                      Nauka bez wychodzenia z domu
-                    </li>
+                      <li className="flex items-center gap-2">
+                        <User className="w-5 h-5 text-blue-500" />
+                        Lekcje 1 na 1
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <BookOpen className="w-5 h-5 text-blue-500" />
+                        Materiały w cenie
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Target className="w-5 h-5 text-blue-500" />
+                        Indywidualne podejście
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <Clock className="w-5 h-5 text-blue-500" />
+                        Elastyczne terminy zajęć
+                      </li>
                   </ul>
                 </div>
 
@@ -181,22 +181,22 @@ const AboutMe = () => {
                  <p className="text-sm text-gray-600 mt-2">Długość zajęć 50 min</p>
 
                  <ul className="mt-6 space-y-3 text-left text-gray-700">
-                   <li className="flex items-center gap-2">
-                     <CheckCircle className="w-5 h-5 text-blue-500" />
-                     Lekcje 1 na 1
-                   </li>
-                   <li className="flex items-center gap-2">
-                     <BookOpen className="w-5 h-5 text-blue-500" />
-                     Materiały drukowane
-                   </li>
-                   <li className="flex items-center gap-2">
-                     <User className="w-5 h-5 text-blue-500" />
-                     Indywidualne podejście
-                   </li>
-                   <li className="flex items-center gap-2">
-                     <Home className="w-5 h-5 text-blue-500" />
-                     Komfortowe miejsce nauki
-                   </li>
+                     <li className="flex items-center gap-2">
+                       <Users className="w-5 h-5 text-blue-500" />
+                       Kameralne grupy do 6 osób
+                     </li>
+                     <li className="flex items-center gap-2">
+                       <BookOpen className="w-5 h-5 text-blue-500" />
+                       Materiały w cenie
+                     </li>
+                     <li className="flex items-center gap-2">
+                       <Handshake className="w-5 h-5 text-blue-500" />
+                       Wymiana doświadczeń z innymi uczestnikami
+                     </li>
+                     <li className="flex items-center gap-2">
+                       <Target className="w-5 h-5 text-blue-500" />
+                       Zajęcia dostosowane do poziomu grupy
+                     </li>
                  </ul>
                </div>
 

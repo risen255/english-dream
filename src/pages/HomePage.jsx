@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
-import { CheckCircle, Laptop, BookOpen, User, Home, Globe, Sofa } from "lucide-react";
+import { CheckCircle, Laptop, BookOpen, Clock, Target, User, Users, Home, Globe, Sofa, Flame, Handshake } from "lucide-react";
 import { motion } from "framer-motion";
 
 const HomePage = () => {
@@ -341,20 +341,20 @@ const HomePage = () => {
 
               <ul className="mt-6 space-y-3 text-left text-gray-700">
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-blue-500" />
+                  <User className="w-5 h-5 text-blue-500" />
                   Lekcje 1 na 1
                 </li>
                 <li className="flex items-center gap-2">
-                  <Laptop className="w-5 h-5 text-blue-500" />
-                  Interaktywne materiały
+                  <BookOpen className="w-5 h-5 text-blue-500" />
+                  Materiały w cenie
                 </li>
                 <li className="flex items-center gap-2">
-                  <User className="w-5 h-5 text-blue-500" />
+                  <Target className="w-5 h-5 text-blue-500" />
                   Indywidualne podejście
                 </li>
                 <li className="flex items-center gap-2">
-                  <Globe className="w-5 h-5 text-blue-500" />
-                  Nauka bez wychodzenia z domu
+                  <Clock className="w-5 h-5 text-blue-500" />
+                  Elastyczne terminy zajęć
                 </li>
               </ul>
             </div>
@@ -376,20 +376,20 @@ const HomePage = () => {
 
              <ul className="mt-6 space-y-3 text-left text-gray-700">
                <li className="flex items-center gap-2">
-                 <CheckCircle className="w-5 h-5 text-blue-500" />
-                 Lekcje 1 na 1
+                 <Users className="w-5 h-5 text-blue-500" />
+                 Nauka z partnerem/partnerką
                </li>
                <li className="flex items-center gap-2">
                  <BookOpen className="w-5 h-5 text-blue-500" />
-                 Materiały drukowane
+                 Materiały w cenie
                </li>
                <li className="flex items-center gap-2">
-                 <User className="w-5 h-5 text-blue-500" />
-                 Indywidualne podejście
+                 <Flame className="w-5 h-5 text-blue-500" />
+                 Wspólna motywacja do nauki
                </li>
                <li className="flex items-center gap-2">
-                 <Home className="w-5 h-5 text-blue-500" />
-                 Komfortowe miejsce nauki
+                 <Target className="w-5 h-5 text-blue-500" />
+                 Zajęcia dostosowane do poziomu obu osób
                </li>
              </ul>
            </div>
@@ -411,20 +411,20 @@ const HomePage = () => {
 
               <ul className="mt-6 space-y-3 text-left text-gray-700">
                 <li className="flex items-center gap-2">
-                  <Home className="w-5 h-5 text-blue-500" />
-                  Lekcje w Twoim domu
+                  <Users className="w-5 h-5 text-blue-500" />
+                  Kameralne grupy do 6 osób
                 </li>
                 <li className="flex items-center gap-2">
                   <BookOpen className="w-5 h-5 text-blue-500" />
-                  Materiały drukowane
+                  Materiały w cenie
                 </li>
                 <li className="flex items-center gap-2">
-                  <User className="w-5 h-5 text-blue-500" />
-                  Indywidualne podejście
+                  <Handshake className="w-5 h-5 text-blue-500" />
+                  Wymiana doświadczeń z innymi uczestnikami
                 </li>
                 <li className="flex items-center gap-2">
-                  <Sofa className="w-5 h-5 text-blue-500" />
-                  Nauka w zaciszu własnego domu
+                  <Target className="w-5 h-5 text-blue-500" />
+                  Zajęcia dostosowane do poziomu grupy
                 </li>
               </ul>
             </div>
