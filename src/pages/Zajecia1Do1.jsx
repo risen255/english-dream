@@ -176,7 +176,7 @@ const Zajecia1Do1 = () => {
 
              {/* Obrazek */}
              <img
-               src="/images/courses/present-simple-single.png"
+               src="/images/courses/individual-classes.png"
                className="w-160 h-auto"
              />
            </div>
@@ -203,8 +203,8 @@ const Zajecia1Do1 = () => {
            {/* Kontener obrazka */}
            <div className="relative w-full max-w-md overflow-hidden">
              <img
-               src="/images/courses/present-simple-power-pack.png"
-               className="w-full h-auto transform scale-180 lg:scale-180 transition-transform duration-500"
+               src="/images/courses/individual-classes.png"
+               className="w-full h-auto transform scale-180 lg:scale-120 transition-transform duration-500"
                alt="Ćwiczeniowy Power Pack"
              />
            </div>

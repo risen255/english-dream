@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaPhone, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope, FaFacebook, FaBuilding } from "react-icons/fa";
-import { FiPhone, FiVideo, FiBook, FiFileText, FiUser, FiMic } from "react-icons/fi";
+import { FiPhone, FiVideo, FiBook, FiFileText, FiUser, FiUsers, FiMic } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 import { ShoppingCartIcon, InformationCircleIcon, AcademicCapIcon  } from '@heroicons/react/24/solid';
 
@@ -139,23 +139,23 @@ const KursGrupowyOdZeraDlaDoroslych = () => {
            className="min-h-screen flex flex-col justify-start items-center bg-gradient-to-r from-blue-500 via-indigo-500 to-[#0C1C8C] text-white text-center px-6 py-12 pt-16"
          >
            {/* Tytuł główny */}
-           <h1 className="text-4xl lg:text-5xl font-extrabold mb-4 mt-10">Zajecia indywidualne 1:1</h1>
+           <h1 className="text-4xl lg:text-5xl font-extrabold mb-4 mt-10">Zajecia grupowe dla dorosłych</h1>
            {/* Podtytuł */}
-           <p className="text-lg lg:text-2xl mb-10 lg:mb-2 max-w-2xl">Elastyczny kurs dopasowany do Twoich potrzeb</p>
+           <p className="text-lg lg:text-2xl mb-10 lg:mb-2 max-w-2xl">Intensywny kurs języka angielskiego od zera</p>
 
            <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full lg:w-1/2">
               <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-6 flex flex-col items-center justify-center text-center h-40 transform hover:scale-105 hover:-translate-y-2 transition-transform">
                 <FiVideo className="text-4xl mb-3 text-blue-500" />
                 <h3 className="text-lg font-medium leading-snug text-black">
-                  Lekcje 50 minutowe
+                  Lekcje 60 minutowe
                 </h3>
               </div>
 
               <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-6 flex flex-col items-center justify-center text-center h-40 transform hover:scale-105 hover:-translate-y-2 transition-transform">
                 <FiMic className="text-4xl mb-3 text-indigo-500" />
                 <h3 className="text-lg font-medium leading-snug text-black">
-                  Zaczynasz mówić już od pierwszej lekcji
+                  Skupiamy się na mówieniu
                 </h3>
               </div>
 
@@ -167,16 +167,16 @@ const KursGrupowyOdZeraDlaDoroslych = () => {
               </div>
 
               <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-6 flex flex-col items-center justify-center text-center h-40 transform hover:scale-105 hover:-translate-y-2 transition-transform">
-                <FiUser className="text-4xl mb-3 text-blue-500" />
+                <FiUsers className="text-4xl mb-3 text-blue-500" />
                 <h3 className="text-lg font-medium leading-snug text-black">
-                  Nauka słownictwa w kontekście
+                  Małe grupy do 6 osób
                 </h3>
               </div>
             </div>
 
              {/* Obrazek */}
              <img
-               src="/images/courses/present-simple-single.png"
+               src="/images/courses/classes-for-adults.png"
                className="w-160 h-auto"
              />
            </div>
@@ -197,14 +197,14 @@ const KursGrupowyOdZeraDlaDoroslych = () => {
               id="present-simple-bez-sciemy-for-ambitious"
               className="min-h-screen flex flex-col justify-start items-center bg-gradient-to-r from-green-500 via-teal-500 to-blue-500 text-white text-center px-6 py-12 pt-16"
       >
-          <h2 className="text-4xl lg:text-5xl font-bold mb-10 lg:mb-10 tracking-wide text-center lg:text-left">Świetny kurs dla ambitnych!</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-10 lg:mb-10 tracking-wide text-center lg:text-left">Świetny kurs dla dorosłych od zera</h2>
 
          <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8 mt-8">
            {/* Kontener obrazka */}
            <div className="relative w-full max-w-md overflow-hidden">
              <img
-               src="/images/courses/present-simple-power-pack.png"
-               className="w-full h-auto transform scale-180 lg:scale-180 transition-transform duration-500"
+               src="/images/courses/classes-for-adults.png"
+               className="w-full h-auto transform scale-180 lg:scale-120 transition-transform duration-500"
                alt="Ćwiczeniowy Power Pack"
              />
            </div>
@@ -212,15 +212,16 @@ const KursGrupowyOdZeraDlaDoroslych = () => {
             {/* Tekst po prawej stronie */}
             <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
               <div className="space-y-4 text-lg lg:text-xl mt-6">
-                <h2 className="text-2xl sm:text-3xl font-semibold text-center sm:text-left">Indywidualny kurs angielskiego online 1:1 będzie dobrym wyborem, jeśli:</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-center sm:text-left">Zajęciach dla dorosłych od zera online będzie dobrym wyborem jeśli:</h2>
                 <p className="text-base lg:text-lg">
-                  •	masz intensywny tryb pracy i potrzebujesz elastycznego grafiku, który łatwo dopasujesz do swoich obowiązków,<br/>
-                  •	zależy Ci na szybkim postępie i jasno określonym celu językowym,<br/>
-                  •	masz niewiele czasu na naukę i chcesz, aby tempo oraz zakres zajęć były dopasowane właśnie do Ciebie,<br/>
-                  •	cenisz sobie komfort i swobodną atmosferę, w której możesz bez skrępowania zadawać pytania i pracować nad tym, co sprawia Ci największą trudność,<br/>
-                  •	oczekujesz pełnej uwagi lektora i indywidualnego podejścia,<br/>
-                  •	przygotowujesz się do konkretnej sytuacji, takiej jak rozmowa kwalifikacyjna, prezentacja, szkolenie czy wyjazd zagraniczny,<br/>
-                  •	potrzebujesz w krótkim czasie podnieść swój poziom języka angielskiego.
+                  •	zaczynacie naukę angielskiego od podstaw i chcecie zrobić to porządnie, w dobrym tempie, bez poczucia zagubienia,<br/>
+                  •	zależy Wam przede wszystkim na MÓWIENIU – chcecie jak najszybciej zacząć swobodnie się porozumiewać, a nie tylko znać teorię,<br/>
+                  •	wolicie uczyć się w małej grupie (max 6 osób), gdzie każdy ma realną szansę się odezwać i ćwiczyć na żywo,<br/>
+                  •	cenicie energię i motywację, jaką daje wspólna nauka z innymi – presja grupy działa na Was mobilizująco, a nie stresująco,<br/>
+                  •	szukacie intensywnego kursu (36 lekcji), który da Wam solidne podstawy w skondensowanym czasie,<br/>
+                  •	potrzebujecie jasnej struktury i przewodnika – konkretnego planu "od zera do mówienia", zamiast uczenia się po omacku,<br/>
+                  •	nie mieliście wcześniej kontaktu z angielskim (albo bardzo dawno temu) i szukacie kursu, który to uwzględnia od pierwszych zajęć,<br/>
+                  •	zależy Wam na kursie w rozsądnej cenie, bo koszt dzieli się na całą grupę, a efekty i tak są mierzalne.
                 </p>
               </div>
             </div>
@@ -236,46 +237,46 @@ const KursGrupowyOdZeraDlaDoroslych = () => {
               <div className="flex flex-col items-center justify-center max-w-4xl mx-auto gap-6">
                 <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
                   <h3 className="text-2xl font-bold leading-snug text-black mb-2">
-                    Ile trwa lekcja?
+                    Ile trwa kurs?
                   </h3>
                   <h3 className="text-lg font-medium leading-snug text-black">
-                    Lekcja trwa 50 min.
+                    Kurs rozłożony jest na 36 lekcji po 60 min każda.
                   </h3>
                 </div>
 
                 <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
                   <h3 className="text-2xl font-bold leading-snug text-black mb-2">
-                   Kiedy można rozpocząć?
+                   Ile kosztuje kurs?
                   </h3>
                   <h3 className="text-lg font-medium leading-snug text-black">
-                    Po odbyciu lekcji próbnej możesz rozpocząć nawet na następny dzień.
+                    Koszt kursu to 1 440zł - czyli 40 zł za jedne zajęcia. Możesz opłacić w całości lub rozłożyć na raty - wybór należy do Ciebie.
                   </h3>
                 </div>
 
                 <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
                    <h3 className="text-2xl font-bold leading-snug text-black mb-2">
-                     Czy muszę kupować podręcznik?
+                     Co się stanie, jeśli opuszczę zajęcia?
                    </h3>
                    <h3 className="text-lg font-medium leading-snug text-black">
-                    Nie. Wszystkie materiały są zapewnione w kursie.
+                    Każda lekcja jest nagrywana, dzięki czemu możesz nadrobić zaległości w dogodnym dla Ciebie czasie.
                    </h3>
                 </div>
 
                 <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
                     <h3 className="text-2xl font-bold leading-snug text-black mb-2">
-                      Czy mogę zmienić lektora w trakcie kursu?
+                      Dlaczego ten kurs jest inny?
                     </h3>
                     <h3 className="text-lg font-medium leading-snug text-black">
-                      Tak, można zmienić lektora w każdej chwili.
+                      W wielu kursach nacisk kładzie się głównie na gramatykę i podręcznikowe ćwiczenia. <b>Tutaj priorytetem jest MÓWIENIE.</b>
                     </h3>
                 </div>
 
                 <div className="bg-white border-3 border-black rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center w-full transform hover:scale-105 hover:-translate-y-2 transition-transform">
                      <h3 className="text-2xl font-bold leading-snug text-black mb-2">
-                       Czy lekcja próbna jest bezpłatna?
+                       Czego się nauczę?
                      </h3>
                      <h3 className="text-lg font-medium leading-snug text-black">
-                      Tak lekcja próbna jest bezpłatna i trwa około 20min.
+                      <b>Zdobędziesz poziom A1</b> po przejściu całego kursu.
                      </h3>
                 </div>
 
@@ -284,7 +285,7 @@ const KursGrupowyOdZeraDlaDoroslych = () => {
                     Czy lekcje są z polskimi lektorami czy native-speakerami?
                    </h3>
                    <h3 className="text-lg font-medium leading-snug text-black">
-                     Wybór należy do Ciebie. Prowadzimy zajęcia zarówno z polskimi lektorami jak i native-speakerami.
+                     Zajęcia są zarówno z polskimi jak i native-speakerami.
                    </h3>
                 </div>
              </div>

@@ -139,9 +139,9 @@ const ZajeciaWParach = () => {
            className="min-h-screen flex flex-col justify-start items-center bg-gradient-to-r from-blue-500 via-indigo-500 to-[#0C1C8C] text-white text-center px-6 py-12 pt-16"
          >
            {/* Tytuł główny */}
-           <h1 className="text-4xl lg:text-5xl font-extrabold mb-4 mt-10">Zajecia indywidualne 1:1</h1>
+           <h1 className="text-4xl lg:text-5xl font-extrabold mb-4 mt-10">Zajecia w parch</h1>
            {/* Podtytuł */}
-           <p className="text-lg lg:text-2xl mb-10 lg:mb-2 max-w-2xl">Elastyczny kurs dopasowany do Twoich potrzeb</p>
+           <p className="text-lg lg:text-2xl mb-10 lg:mb-2 max-w-2xl">Zajęcia dostosowane do poziomu obu osób</p>
 
            <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full lg:w-1/2">
@@ -176,7 +176,7 @@ const ZajeciaWParach = () => {
 
              {/* Obrazek */}
              <img
-               src="/images/courses/present-simple-single.png"
+               src="/images/courses/classes-in-pairs.png"
                className="w-160 h-auto"
              />
            </div>
@@ -197,14 +197,14 @@ const ZajeciaWParach = () => {
               id="present-simple-bez-sciemy-for-ambitious"
               className="min-h-screen flex flex-col justify-start items-center bg-gradient-to-r from-green-500 via-teal-500 to-blue-500 text-white text-center px-6 py-12 pt-16"
       >
-          <h2 className="text-4xl lg:text-5xl font-bold mb-10 lg:mb-10 tracking-wide text-center lg:text-left">Świetny kurs dla ambitnych!</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-10 lg:mb-10 tracking-wide text-center lg:text-left">Świetny kurs dla par lub przyjaciół!</h2>
 
          <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8 mt-8">
            {/* Kontener obrazka */}
            <div className="relative w-full max-w-md overflow-hidden">
              <img
-               src="/images/courses/present-simple-power-pack.png"
-               className="w-full h-auto transform scale-180 lg:scale-180 transition-transform duration-500"
+               src="/images/courses/classes-in-pairs.png"
+               className="w-full h-auto transform scale-180 lg:scale-120 transition-transform duration-500"
                alt="Ćwiczeniowy Power Pack"
              />
            </div>
@@ -212,15 +212,15 @@ const ZajeciaWParach = () => {
             {/* Tekst po prawej stronie */}
             <div className="text-left -mt-6 lg:-mt-8 flex flex-col">
               <div className="space-y-4 text-lg lg:text-xl mt-6">
-                <h2 className="text-2xl sm:text-3xl font-semibold text-center sm:text-left">Indywidualny kurs angielskiego online 1:1 będzie dobrym wyborem, jeśli:</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-center sm:text-left">Zajęciach w parach online będzie dobrym wyborem jeśli:</h2>
                 <p className="text-base lg:text-lg">
-                  •	masz intensywny tryb pracy i potrzebujesz elastycznego grafiku, który łatwo dopasujesz do swoich obowiązków,<br/>
-                  •	zależy Ci na szybkim postępie i jasno określonym celu językowym,<br/>
-                  •	masz niewiele czasu na naukę i chcesz, aby tempo oraz zakres zajęć były dopasowane właśnie do Ciebie,<br/>
-                  •	cenisz sobie komfort i swobodną atmosferę, w której możesz bez skrępowania zadawać pytania i pracować nad tym, co sprawia Ci największą trudność,<br/>
-                  •	oczekujesz pełnej uwagi lektora i indywidualnego podejścia,<br/>
-                  •	przygotowujesz się do konkretnej sytuacji, takiej jak rozmowa kwalifikacyjna, prezentacja, szkolenie czy wyjazd zagraniczny,<br/>
-                  •	potrzebujesz w krótkim czasie podnieść swój poziom języka angielskiego.
+                  •	chcecie uczyć się razem – z partnerem, przyjacielem, współpracownikiem czy członkiem rodziny – i wzajemnie się motywować,<br/>
+                  •	zależy Wam na regularnym kontakcie z językiem, ale osobno trudno Wam utrzymać systematyczność,<br/>
+                  •	szukacie kursu dopasowanego do Waszego wspólnego celu, np. wyjazdu, egzaminu, pracy czy podróży,<br/>
+                  •	lubicie uczyć się w mniejszej, kameralnej grupie, gdzie wciąż jest dużo przestrzeni na rozmowę i ćwiczenia,<br/>
+                  •	chcecie mieć wpływ na tempo i tematykę zajęć, ale niekoniecznie musicie uczyć się sami,<br/>
+                  •	zależy Wam na dobrej atmosferze, w której można swobodnie popełniać błędy i się z nich śmiać,<br/>
+                  •	szukacie rozwiązania korzystniejszego cenowo niż zajęcia indywidualne, bez rezygnacji z jakości nauki.
                 </p>
               </div>
             </div>
