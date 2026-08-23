@@ -249,7 +249,7 @@ const KursGrupowyOdZeraDlaDoroslych = () => {
                    Ile kosztuje kurs?
                   </h3>
                   <h3 className="text-lg font-medium leading-snug text-black">
-                    Koszt kursu to 1 440zł - czyli 40 zł za jedne zajęcia. Możesz opłacić w całości lub rozłożyć na raty - wybór należy do Ciebie.
+                    Koszt kursu to 1440 zł - czyli 40 zł za jedne zajęcia. Możesz opłacić w całości lub rozłożyć na raty - wybór należy do Ciebie.
                   </h3>
                 </div>
 
