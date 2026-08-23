@@ -167,7 +167,7 @@ const Offer = () => {
           </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
-        <p>&copy; 2026 English Dream - Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
+        <p>&copy; 2026 English Dream - wszelkie prawa zastrzeżone.</p>
       </footer>
     </div>
   );

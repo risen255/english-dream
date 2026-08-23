@@ -152,7 +152,7 @@ const Courses = () => {
            <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
              {/* Obrazek */}
              <img
-               src="/images/courses/present-simple-3-in-1.png"
+               src="/images/courses/learn-english-today.png"
                className="w-160 h-auto"
              />
 
@@ -189,7 +189,7 @@ const Courses = () => {
             <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
               {/* Obrazek */}
               <img
-                src="/images/courses/present-simple-single.png"
+                src="/images/courses/individual-classes.png"
                 className="w-160 h-auto"
               />
 
@@ -232,7 +232,7 @@ const Courses = () => {
             <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
               {/* Obrazek */}
               <img
-                src="/images/courses/present-simple-single.png"
+                src="/images/courses/classes-in-pairs.png"
                 className="w-160 h-auto"
               />
 
@@ -275,7 +275,7 @@ const Courses = () => {
              <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
               {/* Obrazek */}
               <img
-                src="/images/courses/present-simple-single.png"
+                src="/images/courses/classes-for-adults.png"
                 className="w-160 h-auto"
               />
 
@@ -317,7 +317,7 @@ const Courses = () => {
             <div className="flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-4 lg:gap-8">
               {/* Obrazek */}
               <img
-                src="/images/courses/present-simple-single.png"
+                src="/images/courses/eighth-graders.png"
                 className="w-160 h-auto"
               />
 
@@ -359,7 +359,7 @@ const Courses = () => {
       </section>
 
       <footer className="text-center p-6 bg-gray-900 text-white">
-        <p>&copy; 2026 English Dream - Szkoła Języka Angielskiego. Wszelkie prawa zastrzeżone.</p>
+        <p>&copy; 2026 English Dream - wszelkie prawa zastrzeżone.</p>
       </footer>
     </div>
   );
